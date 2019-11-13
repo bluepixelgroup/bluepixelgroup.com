@@ -1,12 +1,13 @@
 import React from "react"
+import Menu from "./Menu"
 
 import "./layout.scss"
 
 export default ({ children }) => {
   return (
     <React.Fragment>
-      <div className="test">This is from layout component</div>
-      <div>{children}</div>
+      <Menu/>
+      { children }
     </React.Fragment>
   )
 }
