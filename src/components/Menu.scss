@@ -1,0 +1,19 @@
+@import "../assets/styles/variables";
+
+.menu {
+  margin: 34px 0px;
+
+  .menu-item {
+    a {
+      color: $bp-black;
+      text-decoration: none;
+      padding: 5px;
+    }
+
+    a:hover {
+      color: $bp-blue;
+      font-weight: bold;
+    }
+  }
+}
+

@@ -13,9 +13,20 @@ const theme = createMuiTheme({
       main: colors.red.A400,
     },
     background: {
-      default: `#fff`,
+      default: `#FAFBFC`,
     },
   },
+  overrides: {
+    MuiButton: {
+      outlinedPrimary: {
+        border: '2px solid #2B72F5',
+        fontWeight: 'bold',
+        '&:hover': {
+          border: '2px solid #2B72F5',
+        }
+      }
+    }
+  }
 });
 
 export default theme;
