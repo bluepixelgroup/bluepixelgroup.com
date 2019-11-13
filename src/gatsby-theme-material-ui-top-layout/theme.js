@@ -19,6 +19,7 @@ const theme = createMuiTheme({
   overrides: {
     MuiButton: {
       outlinedPrimary: {
+        height: '40px',
         border: '2px solid #2B72F5',
         fontWeight: 'bold',
         '&:hover': {
