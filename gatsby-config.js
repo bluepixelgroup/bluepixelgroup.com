@@ -8,7 +8,7 @@ module.exports = {
   /* Your site config here */
   plugins: [
     "gatsby-plugin-sass",
-    "gatsby-plugin-material-ui",
+    "gatsby-theme-material-ui",
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
