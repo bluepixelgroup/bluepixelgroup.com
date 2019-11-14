@@ -17,9 +17,13 @@ const theme = createMuiTheme({
     },
   },
   overrides: {
+    MuiPaper: {
+      root: {
+        backgroundColor: `#FAFBFC`,
+      }
+    },
     MuiButton: {
       outlinedPrimary: {
-        height: '40px',
         border: '2px solid #2B72F5',
         fontWeight: 'bold',
         '&:hover': {
