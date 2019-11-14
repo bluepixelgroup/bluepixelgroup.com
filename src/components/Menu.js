@@ -10,9 +10,9 @@ import {
   Hidden,
 } from "@material-ui/core"
 
-import BluePixelLogo from "../assets/images/logo.svg"
-import HamburgerIcon from "../assets/images/hamburger.svg"
-import CloseHamburgerIcon from "../assets/images/close-hamburger.svg"
+import BluePixelLogo from "../assets/images/logo.inline.svg"
+import HamburgerIcon from "../assets/images/hamburger.inline.svg"
+import CloseHamburgerIcon from "../assets/images/close-hamburger.inline.svg"
 
 import "./Menu.scss"
 
@@ -147,9 +147,10 @@ export default class Menu extends React.Component {
   }
 
   render() {
+    console.log(this.menuItems);
     return (
       <React.Fragment>
-        <Hidden only={['sx', 'sm']}>
+        <Hidden only={['xs', 'sm']}>
           { this.renderDesktopMenu() }
         </Hidden>
         <Hidden only={['md', 'lg', 'xl']}>
