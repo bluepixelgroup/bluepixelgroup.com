@@ -2,18 +2,18 @@
 
 .menu {
   margin: 34px 0;
+}
 
-  .menu-item {
-    a {
-      color: $bp-black;
-      text-decoration: none;
-      padding: 5px;
-    }
+.menu-item {
+  a {
+    color: $bp-black;
+    text-decoration: none;
+    padding: 5px;
+  }
 
-    a:hover {
-      color: $bp-blue;
-      font-weight: bold;
-    }
+  a:hover, a:active {
+    color: $bp-blue;
+    font-weight: bold;
   }
 }
 
@@ -21,19 +21,14 @@
   padding: 34px 20px;
 
   .mobile-menu-item {
+    @extend .menu-item;
+
     a, button {
       margin: 0 auto;
     }
 
     a {
-      color: $bp-black;
-      text-decoration: none;
       padding: 10px;
-    }
-
-    a:hover {
-      color: $bp-blue;
-      font-weight: bold;
     }
   }
 }

@@ -147,7 +147,6 @@ export default class Menu extends React.Component {
   }
 
   render() {
-    console.log(this.menuItems);
     return (
       <React.Fragment>
         <Hidden only={['xs', 'sm']}>
