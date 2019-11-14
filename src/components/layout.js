@@ -1,13 +1,16 @@
 import React from "react"
 import Menu from "./Menu"
 
+import {Container} from "@material-ui/core";
 import "./layout.scss"
 
 export default ({ children }) => {
   return (
     <React.Fragment>
-      <Menu/>
-      { children }
+      <Container>
+        <Menu/>
+        { children }
+      </Container>
     </React.Fragment>
   )
 }
