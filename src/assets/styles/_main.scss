@@ -1,0 +1,14 @@
+@import "variables";
+
+body {
+  color: $bp-brown;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 70px;
+  color: $bp-black;
+}

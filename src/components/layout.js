@@ -9,8 +9,8 @@ export default ({ children }) => {
     <React.Fragment>
       <Container>
         <Menu/>
-        { children }
       </Container>
+      { children }
     </React.Fragment>
   )
 }

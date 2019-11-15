@@ -23,6 +23,13 @@ const theme = createMuiTheme({
       }
     },
     MuiButton: {
+      containedPrimary: {
+        height: '60px',
+        fontWeight: 'bold',
+        fontSize: '18px',
+        lineHeight: '22px',
+        textTransform: 'uppercase'
+      },
       outlinedPrimary: {
         border: '2px solid #2B72F5',
         fontWeight: 'bold',

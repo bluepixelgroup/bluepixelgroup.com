@@ -1,0 +1,31 @@
+@import "../assets/styles/variables";
+
+.hero {
+  padding-top: 30px;
+  background-image: url("../assets/images/landing-hero.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+
+  @media (max-width: 1440px) {
+    background-position: calc(100% + 200px);
+  }
+
+  .content-wrapper {
+    max-width: 910px;
+
+    .typings {
+      display: inline-block;
+    }
+
+    .btn-start-project {
+      margin-top: 70px;
+    }
+
+    .btn-info {
+      margin-top: 15px;
+      font-size: 10px;
+      line-height: 150%;
+    }
+  }
+}
