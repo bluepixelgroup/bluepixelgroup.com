@@ -11,6 +11,10 @@
   color: $bp-blue;
 }
 
+.valign-middle {
+  vertical-align: middle;
+}
+
 .clearfix {
   &::after {
     display: block;
