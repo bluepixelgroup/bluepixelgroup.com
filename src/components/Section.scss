@@ -1,0 +1,16 @@
+@import "../assets/styles/variables";
+
+section {
+  .title {
+    font-weight: bold;
+    color: $bp-black;
+    font-size: 2.25rem;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 1.125rem;
+    color: $bp-brown;
+    text-align: center;
+  }
+}

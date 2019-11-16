@@ -1,3 +1,11 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+//
+// Color system
+//
 $bp-blue:         #2B72F5 !default;
 $bp-blue-arctic:  #41CBF0 !default;
 $bp-black:        #202020 !default;
@@ -6,3 +14,78 @@ $bp-yellow:       #F2CC78 !default;
 $bp-orange:       #E2935F !default;
 $bp-white:        #FAFBFC !default;
 
+
+//
+// Spacers
+//
+// Control the default styling of most elements by modifying these
+// variables. Mostly focused on spacing.
+$spacer:                      1rem !default;
+
+
+//
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$headings-margin-top:         $spacer / 2 !default;
+$headings-margin-bottom:      $spacer / 2 !default;
+$headings-font-family:        "Roboto", "Helvetica", "Arial", sans-serif !default;
+$headings-font-weight:        900 !default;
+$headings-line-height:        1.2 !default;
+$headings-color:              $bp-black !default;
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                $font-size-base * 1.25 !default;
+$font-size-sm:                $font-size-base * .875 !default;
+
+$font-weight-lighter:         lighter !default;
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-semibold:        500 !default;
+$font-weight-bold:            700 !default;
+$font-weight-bolder:          bolder !default;
+
+$font-weight-base:            $font-weight-normal !default;
+$line-height-base:            1.5 !default;
+
+$h1-font-size:                $font-size-base * 3.75 !default;  // 60px
+$h2-font-size:                $font-size-base * 2.5 !default;   // 40px
+$h3-font-size:                $font-size-base * 1.75 !default;  // 28px
+$h4-font-size:                $font-size-base * 1.5 !default;   // 24px
+$h5-font-size:                $font-size-base * 1.25 !default;  // 16px
+$h6-font-size:                $font-size-base !default;
+
+$link-font-size:              0.875rem !default;
+$link-color:                  $bp-blue-arctic;
+
+//
+// Media Query Ranges (Material UI Breakpoints)
+// ----------------------------------------------------
+// sm, small: 600px or larger
+// md, medium: 960px or larger
+// lg, large: 1280px or larger
+// xl, extra-large: 1920px or larger
+
+$sm: 600px !default;
+$md: 960px !default;
+$lg: 1280px !default;
+$xl: 1920px !default;
+
+$small-and-down: "only screen and (max-width: #{$sm - 1})" !default;
+$small-and-up: "only screen and (min-width: #{$sm})" !default;
+$medium-and-up: "only screen and (min-width: #{$md})" !default;
+$medium-and-down: "only screen and (max-width: #{$md - 1})" !default;
+$large-and-up: "only screen and (min-width: #{$lg})" !default;
+$extra-large-and-up: "only screen and (min-width: #{$xl})" !default;
+
+
+:export {
+  bpBlue: $bp-blue;
+  bpBlueArctic: $bp-blue-arctic;
+  bpBlack: $bp-black;
+  bpBrown: $bp-brown;
+  bpYellow: $bp-yellow;
+  bpOrange: $bp-orange;
+  bpWhite: $bp-white;
+}
