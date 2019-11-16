@@ -38,15 +38,7 @@ const theme = createMuiTheme({
           border: '2px solid #2B72F5',
         }
       }
-    },
-    MuiListSubheader: {
-      root: {
-        fontSize: '1.125rem',
-        fontWeight: 'bold',
-        color: '#202020', // bp-black
-        lineHeight: '150%',
-      }
-    },
+    }
   }
 });
 

@@ -3,6 +3,10 @@ import { Link } from "gatsby"
 import { Grid, List, ListSubheader, ListItem } from "@material-ui/core"
 
 import BluePixelLogo from "../assets/images/logo.inline.svg"
+import FacebookIcon from "../assets/images/facebookicon.inline.svg"
+import LinkedInIcon from "../assets/images/linkedinicon.inline.svg"
+import TwitterIcon from "../assets/images/twittericon.inline.svg"
+import GithubIcon from "../assets/images/githubicon.inline.svg"
 
 import "./Footer.scss"
 
@@ -11,10 +15,10 @@ const FooterColumn = props => {
     <List
       dense
       disablePadding
-      subheader={
-        <ListSubheader disableGutters>{props.headerTitle}</ListSubheader>
-      }
     >
+      <ListItem disableGutters>
+        <h6>{props.headerTitle}</h6>
+      </ListItem>
       {props.items.map((item, idx) => (
         <ListItem disableGutters key={idx}>
           {item}
@@ -27,11 +31,7 @@ const FooterColumn = props => {
 export default () => {
   return (
     <footer className="footer">
-      <Grid
-        container
-        direction="row"
-        spacing={3}
-      >
+      <Grid container direction="row" spacing={3}>
         <Grid item container lg={6} md={4} xs={12}>
           <Grid item md={12}>
             <BluePixelLogo />
@@ -93,6 +93,35 @@ export default () => {
               ]}
             />
           </Grid>
+        </Grid>
+      </Grid>
+      <Grid container alignItems="center" justify="space-between" className="info-links-container">
+        <Grid item xs={12} sm={6} md={5} lg={7}>
+          <a>
+            <LinkedInIcon />
+          </a>
+          <a>
+            <TwitterIcon />
+          </a>
+          <a>
+            <FacebookIcon />
+          </a>
+          <a>
+            <GithubIcon />
+          </a>
+        </Grid>
+        <Grid item xs={12} sm={6} md={"auto"}>
+          <span className="small-text">© 2019 Blue Pixel. All rights reserved.</span>
+        </Grid>
+        <Grid item xs={12} sm={6} md={"auto"}>
+          <Link className="footer-link small-text" to="/">
+            Privacy Policy
+          </Link>
+        </Grid>
+        <Grid item xs={12} sm={6} md={"auto"}>
+          <Link className="footer-link small-text" to="/">
+            Cookie Policy
+          </Link>
         </Grid>
       </Grid>
     </footer>

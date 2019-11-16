@@ -3,6 +3,10 @@
 .footer {
   padding: 50px 0;
 
+  .small-text {
+    font-size: 0.875rem;
+  }
+
   .grey-text {
     color: $bp-brown;
   }
@@ -17,11 +21,15 @@
 
   .value-proposition {
     @extend .grey-text;
+    @extend .small-text;
     margin: 0;
-    font-size: 0.875rem;
   }
 
   .footer-link, .footer-link:hover, .footer-link:active {
     @extend .grey-text;
+  }
+
+  .info-links-container {
+    margin-top: 60px;
   }
 }
