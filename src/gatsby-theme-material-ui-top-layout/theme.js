@@ -26,18 +26,27 @@ const theme = createMuiTheme({
       containedPrimary: {
         height: '60px',
         fontWeight: 'bold',
-        fontSize: '18px',
-        lineHeight: '22px',
+        fontSize: '1.125rem',
+        lineHeight: '1.375rem',
         textTransform: 'uppercase'
       },
       outlinedPrimary: {
         border: '2px solid #2B72F5',
+        height: '40px',
         fontWeight: 'bold',
         '&:hover': {
           border: '2px solid #2B72F5',
         }
       }
-    }
+    },
+    MuiListSubheader: {
+      root: {
+        fontSize: '1.125rem',
+        fontWeight: 'bold',
+        color: '#202020', // bp-black
+        lineHeight: '150%',
+      }
+    },
   }
 });
 

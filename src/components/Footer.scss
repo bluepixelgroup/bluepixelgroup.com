@@ -1,0 +1,9 @@
+@import "../assets/styles/variables";
+
+.footer-link {
+  color: $bp-brown;
+
+  &:hover, &:active {
+    color: $bp-brown;
+  }
+}
