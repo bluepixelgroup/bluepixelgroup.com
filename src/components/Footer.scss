@@ -1,9 +1,27 @@
 @import "../assets/styles/variables";
 
-.footer-link {
-  color: $bp-brown;
+.footer {
+  padding: 50px 0;
 
-  &:hover, &:active {
+  .grey-text {
     color: $bp-brown;
+  }
+
+  .email-address {
+    margin: 0;
+
+    a {
+      color: $bp-blue-arctic;
+    }
+  }
+
+  .value-proposition {
+    @extend .grey-text;
+    margin: 0;
+    font-size: 0.875rem;
+  }
+
+  .footer-link, .footer-link:hover, .footer-link:active {
+    @extend .grey-text;
   }
 }
