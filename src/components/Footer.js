@@ -4,6 +4,8 @@ import { Grid, List, ListSubheader, ListItem } from "@material-ui/core"
 
 import BluePixelLogo from "../assets/images/logo.inline.svg"
 
+import './Footer.scss'
+
 const FooterColumn = props => {
   return (
     <List
@@ -32,9 +34,9 @@ export default () => {
           <FooterColumn
             headerTitle="CAPABILITIES"
             items={[
-              <Link to="/">Development</Link>,
-              <Link to="/">Prototyping</Link>,
-              <Link to="/">Maintainance</Link>,
+              <Link className="footer-link" to="/">Development</Link>,
+              <Link className="footer-link" to="/">Prototyping</Link>,
+              <Link className="footer-link" to="/">Maintainance</Link>,
             ]}
           />
         </Grid>
@@ -42,8 +44,8 @@ export default () => {
           <FooterColumn
             headerTitle="CLIENTS"
             items={[
-              <Link to="/">Showcases</Link>,
-              <Link to="/">Testimonials</Link>,
+              <Link className="footer-link" to="/">Showcases</Link>,
+              <Link className="footer-link" to="/">Testimonials</Link>,
             ]}
           />
         </Grid>
@@ -51,9 +53,9 @@ export default () => {
           <FooterColumn
             headerTitle="COMPANY"
             items={[
-              <Link to="/">About us</Link>,
-              <Link to="/">Contanct us</Link>,
-              <Link to="/">Blog</Link>,
+              <Link className="footer-link" to="/">About us</Link>,
+              <Link className="footer-link" to="/">Contanct us</Link>,
+              <Link className="footer-link" to="/">Blog</Link>,
             ]}
           />
         </Grid>

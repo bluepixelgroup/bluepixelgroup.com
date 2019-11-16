@@ -26,8 +26,8 @@ const theme = createMuiTheme({
       containedPrimary: {
         height: '60px',
         fontWeight: 'bold',
-        fontSize: '18px',
-        lineHeight: '22px',
+        fontSize: '1.125rem',
+        lineHeight: '1.375rem',
         textTransform: 'uppercase'
       },
       outlinedPrimary: {
@@ -41,10 +41,10 @@ const theme = createMuiTheme({
     },
     MuiListSubheader: {
       root: {
-        fontSize: '18px',
+        fontSize: '1.125rem',
         fontWeight: 'bold',
         color: '#202020', // bp-black
-        lineHeight: '27px',
+        lineHeight: '150%',
       }
     },
   }
