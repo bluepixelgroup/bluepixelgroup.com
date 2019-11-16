@@ -26,7 +26,7 @@ const FooterColumn = props => {
 
 export default () => {
   return (
-    <footer>
+    <footer className="footer">
       <Grid
         container
         direction="row"

@@ -1,23 +1,27 @@
 @import "../assets/styles/variables";
 
-.grey-text {
-  color: $bp-brown;
-}
+.footer {
+  padding: 50px 0;
 
-.email-address {
-  margin: 0;
-
-  a {
-    color: $bp-blue-arctic;
+  .grey-text {
+    color: $bp-brown;
   }
-}
 
-.value-proposition {
-  @extend .grey-text;
-  margin: 0;
-  font-size: 0.875rem;
-}
+  .email-address {
+    margin: 0;
 
-.footer-link, .footer-link:hover, .footer-link:active {
-  @extend .grey-text;
+    a {
+      color: $bp-blue-arctic;
+    }
+  }
+
+  .value-proposition {
+    @extend .grey-text;
+    margin: 0;
+    font-size: 0.875rem;
+  }
+
+  .footer-link, .footer-link:hover, .footer-link:active {
+    @extend .grey-text;
+  }
 }
