@@ -29,6 +29,7 @@ const theme = createMuiTheme({
     MuiButton: {
       containedPrimary: {
         height: 60,
+        width: 230,
         fontWeight: 'bold',
         fontSize: '1.125rem',
         lineHeight: '1.375rem',
