@@ -13,18 +13,22 @@ const theme = createMuiTheme({
       main: colors.red.A400,
     },
     background: {
-      default: `#FAFBFC`,
+      default: '#FAFBFC',
     },
   },
   overrides: {
     MuiPaper: {
       root: {
-        backgroundColor: `#FAFBFC`,
+        backgroundColor: '#FAFBFC',
+        fontSize: '1rem',
+      },
+      elevation1: {
+        boxShadow: '0 4px 4px rgba(0, 0, 0, 0.03)',
       }
     },
     MuiButton: {
       containedPrimary: {
-        height: '60px',
+        height: 60,
         fontWeight: 'bold',
         fontSize: '1.125rem',
         lineHeight: '1.375rem',
@@ -32,13 +36,13 @@ const theme = createMuiTheme({
       },
       outlinedPrimary: {
         border: '2px solid #2B72F5',
-        height: '40px',
+        height: 40,
         fontWeight: 'bold',
         '&:hover': {
           border: '2px solid #2B72F5',
         }
       }
-    }
+    },
   }
 });
 

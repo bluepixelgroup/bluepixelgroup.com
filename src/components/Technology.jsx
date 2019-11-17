@@ -11,7 +11,8 @@ import * as ClientIcon from "../assets/images/icons/f-platform.svg";
 import * as ReactIcon from "../assets/images/icons/react.svg";
 import * as VueIcon from "../assets/images/icons/vue.svg";
 import * as JavaScriptIcon from "../assets/images/icons/js.svg";
-
+import * as ApiIcon from "../assets/images/icons/API.svg";
+import * as SquareCloudIcon from "../assets/images/icons/Cloud.svg";
 
 
 const Technology = () => (
@@ -46,24 +47,16 @@ const Technology = () => (
                 for use in a type specimen book.
               </p>
 
-              <Paper>
-                <Grid
-                  container
-                  direction="row"
-                  justify="space-between"
-                  alignItems="stretch"
-                  style={{marginTop: 35}}
-                  spacing={3}
-                >
-                  <Grid item xs={3}>x</Grid>
-                  <Grid item xs={9}>
-                    <h6>WordPress APIs</h6>
-                    <p>
-                      The Wordpress API stands for the WordPress Application Programming Interfce.
-                    </p>
-                  </Grid>
-                </Grid>
-              </Paper>
+              <BackTechItem
+                icon={ApiIcon}
+                title="WordPress APIs"
+                details="The Wordpress API stands for the WordPress Application Programming Interfce."
+              />
+              <BackTechItem
+                icon={SquareCloudIcon}
+                title="Cloud APIs"
+                details="The Wordpress API stands for the WordPress Application Programming Interfce."
+              />
             </div>
           </Grid>
           <Grid item xs={12} sm={5}>
@@ -92,22 +85,22 @@ const Technology = () => (
                 style={{marginTop: 35}}
                 spacing={3}
               >
-                <TechnologyItem
+                <ClientTechItem
                   icon={ReactIcon}
                   lang="React.js"
                   details="Reference site about Lorem Ipsum, giving information."
                 />
-                <TechnologyItem
+                <ClientTechItem
                   icon={VueIcon}
                   lang="Vue.js"
                   details="Reference site about Lorem Ipsum, giving information."
                 />
-                <TechnologyItem
+                <ClientTechItem
                   icon={JavaScriptIcon}
                   lang="JavaScript"
                   details="Reference site about Lorem Ipsum, giving information."
                 />
-                <TechnologyItem
+                <ClientTechItem
                   icon={ReactIcon}
                   lang="React Native"
                   details="Reference site about Lorem Ipsum, giving information."
@@ -122,12 +115,44 @@ const Technology = () => (
 );
 
 
-const TechnologyItem = ({icon, lang, details}) => (
+const ClientTechItem = ({icon, lang, details}) => (
   <Grid item xs={6}>
     <img src={icon} alt={lang} style={{height: 48}} />
     <h6>{lang}</h6>
     <p>{details}</p>
   </Grid>
+);
+
+const BackTechItem = ({icon, title, details}) => (
+  <Paper>
+    <Grid
+      container
+      direction="row"
+      justify="space-between"
+      alignItems="center"
+      style={{
+        marginTop: 35,
+        padding: '10px 10px 10px 20px',
+        fontSize: 16,
+      }}
+      spacing={3}
+    >
+      <Grid item xs={3}>
+        <img
+          src={icon}
+          alt={title}
+          style={{
+            width: '100%',
+            maxWidth: 80
+          }}
+        />
+      </Grid>
+      <Grid item xs={9}>
+        <h6>{title}</h6>
+        <p>{details}</p>
+      </Grid>
+    </Grid>
+  </Paper>
 );
 
 export default Technology;
