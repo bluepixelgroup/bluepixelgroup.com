@@ -25,7 +25,7 @@ const OneStop = () => (
           alignItems="flex-start"
         >
           <Grid item xs={12} sm={5}>
-            <h3>One Stop, Deep Insights.</h3>
+            <h2>One Stop, Deep Insights.</h2>
             <p>Whether as your partner who accompanies your projects.</p>
             <p>
               A product planned and delivered by us over multiple milestones for a fixed price. Regardless if you only got

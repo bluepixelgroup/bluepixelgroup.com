@@ -5,7 +5,7 @@ import './Section.scss';
 
 const Section = ({title, subtitle, className, ...props}) => (
   <section className={className}>
-    <h3 className="title">{title}</h3>
+    <h2 className="title">{title}</h2>
     <p className="subtitle">{subtitle}</p>
 
     {props.children}
