@@ -7,10 +7,6 @@
   background-size: contain;
   background-position: right;
 
-  @media (max-width: 1440px) {
-    background-position: calc(100% + 200px);
-  }
-
   .content-wrapper {
     max-width: 910px;
 
@@ -27,5 +23,27 @@
       font-size: 0.625rem;
       line-height: 150%;
     }
+
+    h1 {
+      @media (max-width: 730px) {
+        min-height: 165px;
+      }
+
+      @media (max-width: 390px) {
+        min-height: 200px;
+      }
+    }
+  }
+
+  @media (max-width: 1440px) {
+    background-position: calc(100% + 200px);
+  }
+
+  @media (max-width: 1280px) {
+    background-position: calc(100% + 250px);
+  }
+
+  @media (max-width: 960px) {
+    background-position: calc(100% + 300px);
   }
 }
