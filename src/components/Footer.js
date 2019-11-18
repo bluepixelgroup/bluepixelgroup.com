@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Grid, List, ListSubheader, ListItem } from "@material-ui/core"
+import { Grid, List, ListItem } from "@material-ui/core"
 
 import BluePixelLogo from "../assets/images/logo.inline.svg"
 import FacebookIcon from "../assets/images/facebookicon.inline.svg"
@@ -97,16 +97,16 @@ export default () => {
       </Grid>
       <Grid container alignItems="center" justify="space-between" className="info-links-container">
         <Grid item xs={12} sm={6} md={5} lg={7}>
-          <a>
+          <a href="https://linkedin.com/">
             <LinkedInIcon />
           </a>
-          <a>
+          <a href="https://twitter.com">
             <TwitterIcon />
           </a>
-          <a>
+          <a href="https://facebook.com">
             <FacebookIcon />
           </a>
-          <a>
+          <a href="https://github.com">
             <GithubIcon />
           </a>
         </Grid>

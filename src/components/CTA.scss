@@ -1,0 +1,12 @@
+@import "../assets/styles/variables";
+
+.cta {
+  background-color: lighten($color: $bp-blue, $amount: 40);
+  padding: 54px 0;
+
+  .contact-link {
+    color: $bp-black;
+    font-size: 1.125rem;
+    text-decoration: underline;
+  }
+}
