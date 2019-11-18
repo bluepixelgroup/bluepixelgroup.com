@@ -24,7 +24,7 @@ export default () => {
                   start a project
                 </Button>
               </Grid>
-              <Grid item>
+              <Grid item className="contact-link-container">
                 <span className="text-black">
                   or <Link className="contact-link" to="/">contact us</Link>
                 </span>
