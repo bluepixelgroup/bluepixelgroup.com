@@ -69,10 +69,10 @@ export default () => {
               <FooterColumn
                 headerTitle="CLIENTS"
                 items={[
-                  <Link className="footer-link" to="/">
+                  <Link className="footer-link" to="/case-studies">
                     Showcases
                   </Link>,
-                  <Link className="footer-link" to="/">
+                  <Link className="footer-link" to="/case-studies">
                     Testimonials
                   </Link>,
                 ]}

@@ -89,7 +89,7 @@ export default class Menu extends React.Component {
                   <Link to="/">CAPABILITIES</Link>
                 </ListItem>
                 <ListItem className="mobile-menu-item">
-                  <Link to="/">CLIENTS</Link>
+                  <Link to="/case-studies">CLIENTS</Link>
                 </ListItem>
                 <ListItem className="mobile-menu-item">
                   <Link to="/">TEAM</Link>
@@ -133,7 +133,7 @@ export default class Menu extends React.Component {
                 <Link to="/">CAPABILITIES</Link>
               </Grid>
               <Grid item className="menu-item">
-                <Link to="/">CLIENTS</Link>
+                <Link to="/case-studies">CLIENTS</Link>
               </Grid>
               <Grid item className="menu-item">
                 <Link to="/">TEAM</Link>
