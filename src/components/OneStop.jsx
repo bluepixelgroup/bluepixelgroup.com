@@ -9,7 +9,7 @@ import './OneStop.scss';
 import * as ModularIcon from '../assets/images/icons/modular.svg';
 import * as CustomizableIcon from '../assets/images/icons/customizable.svg';
 import * as ScalableIcon from '../assets/images/icons/scalable.svg';
-import * as ResponsiveIcon from '../assets/images/icons/Responsive.svg';
+import * as ResponsiveIcon from '../assets/images/icons/responsive.svg';
 
 
 
