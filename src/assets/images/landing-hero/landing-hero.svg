@@ -8,5 +8,5 @@
   <mask id="rctPathH" fill="white">
     <rect x="311.849" width="40" height="40" rx="5" transform="rotate(30 311.849 0)"/>
   </mask>
-  <rect x="311.849" width="40" height="40" rx="5" transform="rotate(30 311.849 0)" stroke="#2B72F5" stroke-opacity="0.2" stroke-width="14"/>
+  <rect x="311.849" width="40" height="40" rx="5" transform="rotate(30 311.849 0)" stroke="#2B72F5" stroke-opacity="0.2" stroke-width="8"/>
 </svg>
