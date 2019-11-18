@@ -1,10 +1,14 @@
 @import "../assets/styles/variables";
 
 .hero {
-  padding-top: 30px;
+  padding-top: 10px;
   background-image: url("../assets/images/landing-hero/landing-hero.svg");
   background-repeat: no-repeat;
   background-position: top right;
+
+  @media (min-width: 350px) {
+    padding-top: 30px;
+  }
 
   .content-wrapper {
     max-width: 910px;
@@ -14,18 +18,26 @@
     }
 
     .btn-start-project {
-      margin-top: 70px;
+      margin-top: 10px;
+
+      @media (min-width: 350px) {
+        margin-top: 70px;
+      }
     }
 
-    .btn-info {
+    small.btn-info {
+      display: block;
       margin-top: 15px;
       font-size: 0.625rem;
       line-height: 150%;
     }
 
     h1 {
+      margin-top: 3.5rem;
+
       @media (max-width: 730px) {
         min-height: 165px;
+        margin-top: 0;
       }
 
       @media (max-width: 390px) {
@@ -36,10 +48,16 @@
         min-height: 210px;
       }
     }
+
+    p {
+      @media (min-width: 730px) {
+        margin-top: 40px;
+      }
+    }
   }
 
   .building-on {
-    margin-top: 120px;
+    margin-top: 60px;
 
     .cloud-providers {
       margin-top: 20px;

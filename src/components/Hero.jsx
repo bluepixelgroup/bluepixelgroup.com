@@ -31,17 +31,16 @@ export default () => {
               />
             </span>
           </h1>
-          <div>
+          <p>
             Many desktop publishing packages and web page editors now use Lorem
             Ipsum as their default model text, and a search for 'lorem ipsum'
-            will
-            uncover.
-          </div>
+            will uncover.
+          </p>
           <Button variant="contained" color="primary"
                   className="btn-start-project">
             start a project
           </Button>
-          <div className="btn-info">* Free quote for your project</div>
+          <small className="btn-info">* Free quote for your project</small>
         </div>
         <div className="building-on">
           <h6>Building on:</h6>
