@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Grid, List, ListItem, Container } from "@material-ui/core"
+import { Grid, List, ListItem, Container, IconButton } from "@material-ui/core"
 
 import BluePixelLogo from "../assets/images/logo.inline.svg"
 import FacebookIcon from "../assets/images/facebookicon.inline.svg"
@@ -96,20 +96,20 @@ export default () => {
             </Grid>
           </Grid>
         </Grid>
-        <Grid container alignItems="center" justify="space-between" className="info-links-container">
+        <Grid container justify="space-between" className="info-links-container">
           <Grid item xs={12} sm={6} md={5} lg={7}>
-            <a href="https://linkedin.com/">
+            <IconButton size="small" href="https://linkedin.com/">
               <LinkedInIcon />
-            </a>
-            <a href="https://twitter.com">
+            </IconButton>
+            <IconButton size="small" href="https://twitter.com">
               <TwitterIcon />
-            </a>
-            <a href="https://facebook.com">
+            </IconButton>
+            <IconButton size="small" href="https://facebook.com">
               <FacebookIcon />
-            </a>
-            <a href="https://github.com">
+            </IconButton>
+            <IconButton size="small" href="https://github.com">
               <GithubIcon />
-            </a>
+            </IconButton>
           </Grid>
           <Grid item xs={12} sm={6} md={"auto"}>
             <span className="small-text">© 2019 Blue Pixel. All rights reserved.</span>
