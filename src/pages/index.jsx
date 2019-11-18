@@ -12,14 +12,12 @@ import '../assets/styles/_main.scss';
 
 export default () => {
   return (
-    <React.Fragment>
-      <Layout>
-        <Hero/>
-        <Technology />
-        <ProjectsBuilt/>
-        <OneStop />
-        <Team />
-      </Layout>
-    </React.Fragment>
+    <Layout>
+      <Hero/>
+      <Technology />
+      <ProjectsBuilt/>
+      <OneStop />
+      <Team />
+    </Layout>
   )
 }
