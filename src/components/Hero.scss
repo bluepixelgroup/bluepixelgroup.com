@@ -4,8 +4,7 @@
   padding-top: 30px;
   background-image: url("../assets/images/landing-hero/landing-hero.svg");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
+  background-position: top right;
 
   .content-wrapper {
     max-width: 910px;
@@ -30,7 +29,11 @@
       }
 
       @media (max-width: 390px) {
-        min-height: 200px;
+        min-height: 190px;
+      }
+
+      @media (max-width: 350px) {
+        min-height: 210px;
       }
     }
   }
@@ -47,17 +50,25 @@
         margin: 20px 0;
       }
     }
+
+    @media (max-width: 600px) {
+      margin-top: 60px;
+    }
   }
 
   @media (max-width: 1440px) {
-    background-position: calc(100% + 200px);
+    background-position: top 0 left calc(100% + 200px);
   }
 
   @media (max-width: 1280px) {
-    background-position: calc(100% + 250px);
+    background-position: top 0 left calc(100% + 300px);
   }
 
   @media (max-width: 960px) {
-    background-position: calc(100% + 300px);
+    background-position: top 0 left calc(100% + 400px);
+  }
+
+  @media (max-width: 600px) {
+    background-position: top 0 left calc(100% + 500px);
   }
 }
