@@ -16,7 +16,15 @@ module.exports = {
         name: "portofolio",
       },
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/src/assets/images/portfolio`,
+      },
+    },
     "gatsby-transformer-remark",
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: "gatsby-plugin-react-svg",
       options: {

@@ -2,9 +2,9 @@
 title: "Project one title"
 date: "2017-08-21"
 testimonial: "Great testimonial for project one"
-projectName: "Oriel"
-featuredImage: ../assets/images/portfolio/oriel-icon.png
-projectShortDescription: "Holder text for use in your graphic, print and web layouts, and discover plugins for."
+projectName: "Yournet"
+featuredImage: ../assets/images/portfolio/yournet-icon.png
+projectShortDescription: "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
 featured: true
 ---
 
