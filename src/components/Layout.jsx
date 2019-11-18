@@ -3,19 +3,13 @@ import Menu from "./Menu"
 import Footer from "./Footer"
 import CTA from "./CTA"
 
-import { Container } from "@material-ui/core"
-
 export default ({ children }) => {
   return (
     <React.Fragment>
-      <Container>
-        <Menu />
-      </Container>
+      <Menu />
       {children}
       <CTA/>
-      <Container>
-        <Footer />
-      </Container>
+      <Footer />
     </React.Fragment>
   )
 }

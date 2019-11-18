@@ -8,6 +8,7 @@ import {
   ListItem,
   IconButton,
   Hidden,
+  Container
 } from "@material-ui/core"
 
 import BluePixelLogo from "../assets/images/logo.inline.svg"
@@ -85,6 +86,9 @@ export default class Menu extends React.Component {
                   <Link to="/">SERVICES</Link>
                 </ListItem>
                 <ListItem className="mobile-menu-item">
+                  <Link to="/">CAPABILITIES</Link>
+                </ListItem>
+                <ListItem className="mobile-menu-item">
                   <Link to="/">CLIENTS</Link>
                 </ListItem>
                 <ListItem className="mobile-menu-item">
@@ -126,6 +130,9 @@ export default class Menu extends React.Component {
                 <Link to="/">SERVICES</Link>
               </Grid>
               <Grid item className="menu-item">
+                <Link to="/">CAPABILITIES</Link>
+              </Grid>
+              <Grid item className="menu-item">
                 <Link to="/">CLIENTS</Link>
               </Grid>
               <Grid item className="menu-item">
@@ -148,14 +155,14 @@ export default class Menu extends React.Component {
 
   render() {
     return (
-      <React.Fragment>
+      <Container>
         <Hidden only={['xs', 'sm']}>
           { this.renderDesktopMenu() }
         </Hidden>
         <Hidden only={['md', 'lg', 'xl']}>
           { this.renderMobileMenu() }
         </Hidden>
-      </React.Fragment>
+      </Container>
     )
   }
 }
