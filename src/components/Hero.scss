@@ -2,7 +2,7 @@
 
 .hero {
   padding-top: 30px;
-  background-image: url("../assets/images/landing-hero.svg");
+  background-image: url("../assets/images/landing-hero/landing-hero.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
@@ -31,6 +31,20 @@
 
       @media (max-width: 390px) {
         min-height: 200px;
+      }
+    }
+  }
+
+  .building-on {
+    margin-top: 120px;
+
+    .cloud-providers {
+      margin-top: 20px;
+      max-width: 850px;
+      padding: 0 12px;
+
+      .cloud-icon {
+        margin: 20px 0;
       }
     }
   }
