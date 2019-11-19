@@ -37,12 +37,22 @@ const theme = createMuiTheme({
       },
       outlinedPrimary: {
         border: '2px solid #2B72F5',
-        height: 40,
-        fontWeight: 'bold',
+        textTransform: 'uppercase',
         '&:hover': {
           border: '2px solid #2B72F5',
-        }
-      }
+        },
+      },
+      outlinedSizeMedium: {
+        height: 40,
+        fontWeight: 'bold',
+      },
+      outlinedSizeLarge: {
+        minHeight: 60,
+        minWidth: 230,
+        fontWeight: 'bold',
+        fontSize: '1.125rem',
+        lineHeight: '1.375rem',
+      },
     },
   }
 });

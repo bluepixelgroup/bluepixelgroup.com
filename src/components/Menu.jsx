@@ -98,7 +98,7 @@ export default class Menu extends React.Component {
                   <Link to="/">CONTACT US</Link>
                 </ListItem>
                 <ListItem className="mobile-menu-item">
-                  <Button variant="outlined" color="primary">
+                  <Button variant="outlined" color="primary" size="medium">
                     START A PROJECT
                   </Button>
                 </ListItem>
@@ -142,7 +142,7 @@ export default class Menu extends React.Component {
                 <Link to="/">CONTACT US</Link>
               </Grid>
               <Grid item>
-                <Button variant="outlined" color="primary">
+                <Button variant="outlined" color="primary" size="medium">
                   START A PROJECT
                 </Button>
               </Grid>
