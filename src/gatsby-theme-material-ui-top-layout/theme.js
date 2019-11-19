@@ -42,7 +42,7 @@ const theme = createMuiTheme({
           border: '2px solid #2B72F5',
         },
       },
-      outlinedSizeMedium: {
+      outlinedSizeSmall: {
         height: 40,
         fontWeight: 'bold',
       },
