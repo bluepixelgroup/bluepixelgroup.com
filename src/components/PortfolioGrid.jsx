@@ -15,7 +15,7 @@ const PortfolioGrid = ({data}) => {
             alignItems="center"
             className="portfolio">
         {data.allMarkdownRemark.edges.map(({node}, index) => (
-          <Grid alignItems="center" container item xs={12} md={3} key={index}>
+          <Grid alignItems="center" container item xs={12} sm={6} md={4} key={index}>
             <div className="portfolio-item">
               <div className="preview">
                 <Link
