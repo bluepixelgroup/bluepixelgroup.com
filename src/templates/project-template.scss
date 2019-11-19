@@ -1,0 +1,30 @@
+
+@import "../assets/styles/variables";
+
+.project-template-container {
+  .page-category {
+    margin-top: 165px;
+    margin-bottom: 25px;
+    color: $bp-black;
+  }
+
+  .case-study-cover-image {
+    margin-top: 35px;
+    margin-bottom: 60px;
+  }
+
+  .case-study-article {
+    h2 {
+      margin-bottom: 30px;
+    }
+
+    p {
+      margin: 30px 0;
+    }
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+}

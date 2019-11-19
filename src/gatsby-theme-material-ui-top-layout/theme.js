@@ -26,6 +26,14 @@ const theme = createMuiTheme({
         boxShadow: '0 4px 4px rgba(0, 0, 0, 0.03)',
       }
     },
+    MuiChip: {
+      root: {
+        borderRadius: '5px',
+        backgroundColor: 'rgba(118, 115, 115, 0.1)',
+        fontSize: '1rem',
+        color: '#767373',
+      }
+    },
     MuiButton: {
       containedPrimary: {
         height: 60,

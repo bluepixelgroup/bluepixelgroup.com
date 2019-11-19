@@ -4,36 +4,48 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import { Container, Grid, Chip } from "@material-ui/core"
 
-import "../assets/styles/_main.scss"
+import "./project-template.scss"
+
+const TagList = (props) => {
+  const { title, tags } = props;
+  return (
+    <React.Fragment>
+      <div className="section-title">{title}</div>
+      <Grid container spacing={1}>
+        {tags.map((tag, idx) => {
+          return (
+            <Grid item key={idx}>
+              <Chip label={tag}></Chip>
+            </Grid>
+          )
+        })}
+      </Grid>
+    </React.Fragment>
+  )
+}
 
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
-      <Container>
-        <h1>{post.frontmatter.title}</h1>
+      <Container className="project-template-container">
+        <p className="page-category">CASE STUDIES</p>
+        <h1 className="case-study-title">{post.frontmatter.title}</h1>
         <Img
+          className="case-study-cover-image"
           fluid={post.frontmatter.coverImage.childImageSharp.fluid}
           alt={post.frontmatter.title}
         />
         <Grid container justify="space-between">
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={6} className="case-study-article">
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
           </Grid>
-          <Grid item xs={12} md={5}>
-            <Grid container direction="column">
-              <Grid item>
-                <p>Tags</p>
-                {post.frontmatter.tags.map((tag, idx) => {
-                  return <Chip label={tag} key={idx}></Chip>
-                })}
-              </Grid>
-              <Grid item>
-                <p>Tech</p>
-                {post.frontmatter.tech.map((techName, idx) => {
-                  return <Chip label={techName} key={idx}></Chip>
-                })}
-              </Grid>
+          <Grid item xs={12} md={5} container direction="column" spacing={5}>
+            <Grid item>
+              <TagList title="Tags" tags={post.frontmatter.tags} />
+            </Grid>
+            <Grid item>
+              <TagList title="Tech" tags={post.frontmatter.tech} />
             </Grid>
           </Grid>
         </Grid>
