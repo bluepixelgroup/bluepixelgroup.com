@@ -23,8 +23,9 @@ const OneStop = () => (
           direction="row"
           justify="space-between"
           alignItems="flex-start"
+          spacing={8}
         >
-          <Grid item xs={12} sm={5}>
+          <Grid item xs={12} md={6}>
             <h2>One Stop, Deep Insights.</h2>
             <p>Whether as your partner who accompanies your projects.</p>
             <p>
@@ -40,12 +41,12 @@ const OneStop = () => (
             </Button>
             <small>* We usually respond within 48h</small>
           </Grid>
-          <Grid item xs={12} sm={5}>
+          <Grid item xs={12} md={6}>
             <Grid
               container
               direction="row"
               justify="space-between"
-              alignItems="stretch"
+              alignItems="center"
               spacing={3}
             >
               <Item
@@ -77,10 +78,12 @@ const OneStop = () => (
 );
 
 const Item = ({icon, title, details}) => (
-  <Grid item xs={6}>
-    <img src={icon} alt={title} />
-    <h6>{title}</h6>
-    <p>{details}</p>
+  <Grid item xs={12} sm={6}>
+    <div className="one-stop-item">
+      <img src={icon} alt={title} />
+      <h6>{title}</h6>
+      <p>{details}</p>
+    </div>
   </Grid>
 );
 

@@ -31,8 +31,9 @@ const Technology = () => (
             direction="row"
             justify="space-between"
             alignItems="flex-start"
+            spacing={8}
           >
-            <Grid item xs={12} sm={5}>
+            <Grid item sm={12} md={6}>
               <div>
                 <div className="h5">
                   <img
@@ -62,7 +63,7 @@ const Technology = () => (
                 />
               </div>
             </Grid>
-            <Grid item xs={12} sm={5}>
+            <Grid item sm={12} md={6}>
               <div>
                 <div className="h5 text-blue">
                   <img
@@ -141,7 +142,7 @@ const BackTechItem = ({icon, title, details}) => (
       }}
       spacing={3}
     >
-      <Grid item xs={3}>
+      <Grid item xs={3} sm={2}>
         <img
           src={icon}
           alt={title}
@@ -151,7 +152,7 @@ const BackTechItem = ({icon, title, details}) => (
           }}
         />
       </Grid>
-      <Grid item xs={9}>
+      <Grid item xs={9} sm={10}>
         <h6>{title}</h6>
         <p>{details}</p>
       </Grid>

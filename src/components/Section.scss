@@ -16,4 +16,8 @@ section {
     text-align: center;
     margin: 25px auto 65px auto;
   }
+
+  @media (max-width: 600px) {
+    margin: 70px auto
+  }
 }
