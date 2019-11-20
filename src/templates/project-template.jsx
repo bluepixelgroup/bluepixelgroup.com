@@ -1,10 +1,13 @@
-import React from "react"
-import Img from "gatsby-image"
-import { graphql } from "gatsby"
-import Layout from "../components/Layout"
-import { Container, Grid, Chip } from "@material-ui/core"
+import React from "react";
+import { Container, Grid, Chip } from "@material-ui/core";
+import Img from "gatsby-image";
+import { graphql } from "gatsby";
+
+import Layout from "../components/Layout";
+import TestimonialCard from "../components/common/TestimonialCard";
 
 import "./project-template.scss"
+
 
 const TagList = (props) => {
   const { title, tags } = props;
@@ -15,17 +18,18 @@ const TagList = (props) => {
         {tags.map((tag, idx) => {
           return (
             <Grid item key={idx}>
-              <Chip label={tag}></Chip>
+              <Chip label={tag} />
             </Grid>
           )
         })}
       </Grid>
     </React.Fragment>
   )
-}
+};
 
 export default ({ data }) => {
-  const post = data.markdownRemark
+  const post = data.markdownRemark;
+
   return (
     <Layout>
       <Container className="project-template-container">
@@ -37,8 +41,25 @@ export default ({ data }) => {
           alt={post.frontmatter.title}
         />
         <Grid container justify="space-between">
-          <Grid item xs={12} md={6} className="case-study-article">
-            <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <Grid item xs={12} md={6}>
+            <article dangerouslySetInnerHTML={{ __html: post.html }} />
+            <section className="testimonial">
+              <Grid
+                container
+                direction="column"
+                justify="flex-end"
+                alignItems="flex-end"
+              >
+                <Grid item xs>
+                  <h2>Check what our client said:</h2>
+                  <TestimonialCard
+                    testimonial={post.frontmatter.testimonial}
+                    author={post.frontmatter.author}
+                    style={{maxWidth: 416}}
+                  />
+                </Grid>
+              </Grid>
+            </section>
           </Grid>
           <Grid item xs={12} md={5} container direction="column" spacing={5}>
             <Grid item>
@@ -53,6 +74,7 @@ export default ({ data }) => {
     </Layout>
   )
 }
+
 export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -68,7 +90,16 @@ export const query = graphql`
             }
           }
         }
+        testimonial
+        author {
+          name
+          company
+          role
+          image {
+            publicURL
+          }
+        }
       }
     }
   }
-`
+`;

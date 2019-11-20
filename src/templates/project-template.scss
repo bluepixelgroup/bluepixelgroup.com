@@ -13,13 +13,23 @@
     margin-bottom: 60px;
   }
 
-  .case-study-article {
+  article {
     h2 {
       margin-bottom: 30px;
     }
 
     p {
       margin: 30px 0;
+    }
+  }
+
+  .testimonial {
+    background: url(../assets/images/icons/quote.svg) no-repeat 55px 10px;
+    max-width: 600px;
+
+    h2 {
+      max-width: 270px;
+      margin-left: 50px;
     }
   }
 

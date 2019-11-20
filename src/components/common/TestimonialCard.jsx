@@ -7,7 +7,7 @@ import Avatar from "./Avatar";
 
 class TestimonialCard extends React.Component {
   render() {
-    const { testimonial, author } = this.props;
+    const { testimonial, author, style } = this.props;
 
     return (
       <Paper
@@ -15,6 +15,7 @@ class TestimonialCard extends React.Component {
         style={{
           padding: '20px 25px',
           height: '100%',
+          ...style
         }}
       >
         <p>{testimonial}</p>
