@@ -1,5 +1,5 @@
 ---
-title: "Project one title"
+title: "How we helped Oriel.io to build their GDPR solution"
 date: "2017-08-21"
 testimonial: "Oriel contracted with the Blue Pixel team to help build our Consent Management Solution.  Without their help and development skills we simply could not have delivered this project to plan.  Blue Pixel delivered on time, to spec and in budget, so I have no hesitation in recommending their company and will definitely use them again."
 author:
