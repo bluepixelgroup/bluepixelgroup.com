@@ -96,7 +96,7 @@ export default ({ data }) => {
             </Grid>
             { post.frontmatter.projectLink &&
               <Grid item>
-                <a className="project-link stat-item" href="http://example.com">
+                <a className="project-link stat-item" target="_blank" href={post.frontmatter.projectLink}>
                   View project &nbsp;&nbsp;&nbsp;<LinkIcon/>
                 </a>
               </Grid>

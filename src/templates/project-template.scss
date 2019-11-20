@@ -2,8 +2,11 @@
 @import "../assets/styles/variables";
 
 .project-template-container {
+  padding-top: 100px;
+  padding-bottom: 50px;
+
   .page-category {
-    margin-top: 165px;
+    margin-top: 0px;
     margin-bottom: 25px;
     color: $bp-black;
     font-weight: 500;
