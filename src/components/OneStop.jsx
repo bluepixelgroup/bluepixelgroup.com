@@ -16,7 +16,7 @@ import * as ResponsiveIcon from '../assets/images/icons/responsive.svg';
 const OneStop = () => (
   <React.Fragment>
     <Separator />
-    <section className="section-one-stop">
+    <section className="section-one-stop" id="capabilities">
       <Container>
         <Grid
           container

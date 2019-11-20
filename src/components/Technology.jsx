@@ -23,6 +23,7 @@ const Technology = () => (
       title="Our Technology"
       subtitle="State-of-the-art lorem ipsum ot grow your business."
       className="technology"
+      id="technology"
     >
       <div className="wrapper">
         <Container>

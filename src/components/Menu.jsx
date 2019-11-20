@@ -83,16 +83,16 @@ export default class Menu extends React.Component {
             <Grid item>
               <List>
                 <ListItem className="mobile-menu-item">
-                  <Link to="/">SERVICES</Link>
+                  <Link to="/#technology">SERVICES</Link>
                 </ListItem>
                 <ListItem className="mobile-menu-item">
-                  <Link to="/">CAPABILITIES</Link>
+                  <Link to="/#capabilities">CAPABILITIES</Link>
                 </ListItem>
                 <ListItem className="mobile-menu-item">
                   <Link to="/case-studies">CLIENTS</Link>
                 </ListItem>
                 <ListItem className="mobile-menu-item">
-                  <Link to="/">TEAM</Link>
+                  <Link to="/#team">TEAM</Link>
                 </ListItem>
                 <ListItem className="mobile-menu-item">
                   <Link to="/">CONTACT US</Link>
@@ -127,16 +127,16 @@ export default class Menu extends React.Component {
           <Grid item>
             <Grid container direction="row" alignItems="center" spacing={2}>
               <Grid item className="menu-item">
-                <Link to="/">SERVICES</Link>
+                <Link to="/#technology">SERVICES</Link>
               </Grid>
               <Grid item className="menu-item">
-                <Link to="/">CAPABILITIES</Link>
+                <Link to="/#capabilities">CAPABILITIES</Link>
               </Grid>
               <Grid item className="menu-item">
                 <Link to="/case-studies">CLIENTS</Link>
               </Grid>
               <Grid item className="menu-item">
-                <Link to="/">TEAM</Link>
+                <Link to="/#team">TEAM</Link>
               </Grid>
               <Grid item className="menu-item">
                 <Link to="/">CONTACT US</Link>

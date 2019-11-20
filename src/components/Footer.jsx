@@ -86,7 +86,7 @@ export default () => {
                     About us
                   </Link>,
                   <Link className="footer-link" to="/">
-                    Contanct us
+                    Contact us
                   </Link>,
                   <Link className="footer-link" to="/">
                     Blog

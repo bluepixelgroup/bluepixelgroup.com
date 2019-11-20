@@ -15,6 +15,7 @@ const Team = () => (
       title="Our Team"
       subtitle="State-of-the-art lorem ipsum ot grow your business. JavaScript class that can be used to quickly create animations that display numerical."
       className="team"
+      id="team"
     >
       <Container>
         <img src={TeamSVG} alt="Team Members" />
