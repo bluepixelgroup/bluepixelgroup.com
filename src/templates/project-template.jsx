@@ -11,6 +11,7 @@ import TeamIcon from "../assets/images/teamicon.inline.svg"
 import LinkIcon from "../assets/images/linkicon.inline.svg"
 
 import "./project-template.scss"
+import Media from "../components/Media";
 
 
 const TagList = (props) => {
@@ -83,6 +84,7 @@ export default ({ data }) => {
                 </Grid>
               </Grid>
             </section>
+            <Media projectName={post.frontmatter.title} data={post.frontmatter.media || []}/>
           </Grid>
           <Grid item xs={12} md={4} lg={3} container direction="column" spacing={5}>
             <Grid item>
@@ -120,6 +122,14 @@ export const query = graphql`
         coverImage {
           childImageSharp {
             fluid(maxWidth: 1280) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        media {
+          publicURL
+          childImageSharp {
+            fluid(maxWidth: 300) {
               ...GatsbyImageSharpFluid
             }
           }

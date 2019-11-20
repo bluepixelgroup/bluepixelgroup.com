@@ -23,6 +23,10 @@ tech:
   - Node.js
   - React.js
   - Javascript
+media:
+  - ../assets/images/portfolio/media/oriel-scan.png
+  - ../assets/images/portfolio/media/oriel-landing.png
+  - ../assets/images/portfolio/media/yournet.png
 ---
 
 ## Challenge
