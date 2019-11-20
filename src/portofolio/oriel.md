@@ -8,6 +8,7 @@ author:
   company: "Oriel Ventures"
   image: ../assets/images/portfolio/oriel-author.jpg
 projectName: "Oriel"
+projectLink: "http://oriel.io"
 featuredImage: ../assets/images/portfolio/oriel-icon.png
 projectShortDescription: "Holder text for use in your graphic, print and web layouts, and discover plugins for."
 featured: true

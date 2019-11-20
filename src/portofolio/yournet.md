@@ -11,6 +11,7 @@ author:
 projectName: "Yournet"
 featuredImage: ../assets/images/portfolio/yournet-icon.png
 projectShortDescription: "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+projectLink: "https://yournet.io"
 featured: true
 coverImage: ../assets/images/portfolio/oriel-cover.png
 tags:

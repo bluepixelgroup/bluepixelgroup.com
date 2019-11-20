@@ -8,6 +8,7 @@ import TestimonialCard from "../components/common/TestimonialCard";
 
 import CalendarIcon from "../assets/images/calendaricon.inline.svg"
 import TeamIcon from "../assets/images/teamicon.inline.svg"
+import LinkIcon from "../assets/images/linkicon.inline.svg"
 
 import "./project-template.scss"
 
@@ -93,6 +94,13 @@ export default ({ data }) => {
             <Grid item>
               <StatList developmentDuration="38 weeks" teamSize="3 persons" />
             </Grid>
+            { post.frontmatter.projectLink &&
+              <Grid item>
+                <a className="project-link stat-item" href="http://example.com">
+                  View project &nbsp;&nbsp;&nbsp;<LinkIcon/>
+                </a>
+              </Grid>
+            }
           </Grid>
         </Grid>
       </Container>
@@ -108,6 +116,7 @@ export const query = graphql`
         title
         tags
         tech
+        projectLink
         coverImage {
           childImageSharp {
             fluid(maxWidth: 1280) {
