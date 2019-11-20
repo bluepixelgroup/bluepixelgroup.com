@@ -6,6 +6,12 @@
     margin-top: 165px;
     margin-bottom: 25px;
     color: $bp-black;
+    font-weight: 500;
+  }
+
+  .case-study-title {
+    margin: 0;
+    max-width: 840px;
   }
 
   .case-study-cover-image {
@@ -14,6 +20,7 @@
   }
 
   article {
+    // here add styles for rendering markdown
     h2 {
       margin-bottom: 30px;
     }
@@ -36,5 +43,16 @@
   .section-title {
     font-size: 1.5rem;
     margin-bottom: 10px;
+  }
+
+  .stat-item {
+    display: flex;
+    align-items: center;
+
+    .svg-container {
+      width: 30px;
+      display: flex;
+      align-items: center;
+    }
   }
 }
