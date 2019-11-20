@@ -1,8 +1,8 @@
 import React from 'react';
 import Container from "@material-ui/core/Container";
 
-import Section from "../components/Section";
-import Separator from "./Separator";
+import Section from "./common/Section";
+import Separator from "./common/Separator";
 
 import * as TeamSVG from "../assets/images/team.svg";
 import "./Team.scss";

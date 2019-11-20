@@ -1,7 +1,13 @@
 ---
 title: "Project one title"
 date: "2017-08-21"
+
 testimonial: "Great testimonial for project one"
+author:
+  name: "James Quinn"
+  role: "Co-founder"
+  company: "Yournet"
+
 projectName: "Yournet"
 featuredImage: ../assets/images/portfolio/yournet-icon.png
 projectShortDescription: "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."

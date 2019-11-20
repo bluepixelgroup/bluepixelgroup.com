@@ -1,7 +1,7 @@
 import React from "react"
 import Menu from "./Menu"
 import Footer from "./Footer"
-import CTA from "./CTA"
+import CTA from "./common/CTA"
 
 export default ({ children }) => {
   return (

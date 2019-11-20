@@ -1,12 +1,16 @@
 ---
 title: "Project three title"
 date: "2017-08-21"
-testimonial: "Great testimonial for project two"
 projectName: "Moldr"
 featuredImage: ../assets/images/portfolio/moldr-icon.png
 projectShortDescription: "English to emphasise design elements over content. It's also called placeholder (or filler)."
 featured: true
 coverImage: ../assets/images/portfolio/oriel-cover.png
+testimonial: "hello"
+author:
+  name: "J Q"
+  role: "dev"
+  company: "BP"
 tags:
   - Privacy
   - GDPR

@@ -3,8 +3,8 @@ import {Link} from "gatsby";
 import Container from "@material-ui/core/Container";
 import {Button} from "@material-ui/core";
 
-import Section from "../components/Section";
-import Separator from "./Separator";
+import Section from "./common/Section";
+import Separator from "./common/Separator";
 
 import PortfolioGrid from "./PortfolioGrid";
 import "./Portfolio.scss";

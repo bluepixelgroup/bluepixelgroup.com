@@ -3,7 +3,7 @@ import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 
-import Separator from "./Separator";
+import Separator from "./common/Separator";
 
 import './OneStop.scss';
 import * as ModularIcon from '../assets/images/icons/modular.svg';

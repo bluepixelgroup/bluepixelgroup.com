@@ -3,8 +3,8 @@ import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
 import Paper from "@material-ui/core/Paper";
 
-import Section from "../components/Section";
-import Separator from "./Separator";
+import Section from "./common/Section";
+import Separator from "./common/Separator";
 
 import "./Technology.scss";
 import * as CloudIcon from "../assets/images/icons/b-cloud.svg";

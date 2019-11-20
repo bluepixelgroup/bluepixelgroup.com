@@ -24,7 +24,10 @@ const theme = createMuiTheme({
       },
       elevation1: {
         boxShadow: '0 4px 4px rgba(0, 0, 0, 0.03)',
-      }
+      },
+      elevation2: {
+        boxShadow: '0px 4px 10px rgba(32, 32, 32, 0.1)',
+      },
     },
     MuiChip: {
       root: {
