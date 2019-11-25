@@ -7,6 +7,7 @@
 module.exports = {
   siteMetadata: {
     typeformURL: 'https://bluepixel.typeform.com/to/PZrALr',
+    siteUrl: "https://bluepixelgroup.com",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
@@ -35,6 +36,7 @@ module.exports = {
           include: /\.inline\.svg$/
         }
       }
-    }
+    },
+    "gatsby-plugin-sitemap",
   ],
 };
