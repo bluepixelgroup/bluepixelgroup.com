@@ -5,8 +5,11 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    typeformURL: 'https://bluepixel.typeform.com/to/PZrALr',
+  },
   plugins: [
+    "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
     "gatsby-theme-material-ui",
     {
@@ -34,4 +37,4 @@ module.exports = {
       }
     }
   ],
-}
+};

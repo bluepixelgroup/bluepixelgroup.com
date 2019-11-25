@@ -8,13 +8,13 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     createNodeField({
       node,
       name: `slug`,
-      value: `/case-study${slug}`,
+      value: `/case-studies${slug}`,
     })
   }
-}
+};
 
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
   const result = await graphql(`
     query {
       allMarkdownRemark {
@@ -27,7 +27,8 @@ exports.createPages = async ({ graphql, actions }) => {
         }
       }
     }
-  `)
+  `);
+
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
@@ -39,4 +40,4 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
-}
+};

@@ -1,5 +1,5 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 import {
   Grid,
   Button,
@@ -9,25 +9,25 @@ import {
   IconButton,
   Hidden,
   Container
-} from "@material-ui/core"
+} from "@material-ui/core";
 
-import BluePixelLogo from "../assets/images/logo.inline.svg"
-import HamburgerIcon from "../assets/images/hamburger.inline.svg"
-import CloseHamburgerIcon from "../assets/images/close-hamburger.inline.svg"
+import "./Menu.scss";
+import BluePixelLogo from "../assets/images/logo.inline.svg";
+import HamburgerIcon from "../assets/images/hamburger.inline.svg";
+import CloseHamburgerIcon from "../assets/images/close-hamburger.inline.svg";
 
-import "./Menu.scss"
 
 export default class Menu extends React.Component {
   state = {
     drawerOpened: false,
-  }
+  };
 
   toggleDrawer = opened => {
     this.setState({ drawerOpened: opened })
-  }
+  };
 
   renderMobileMenu = () => {
-    let { drawerOpened } = this.state
+    let { drawerOpened } = this.state;
 
     return (
       <header className="menu">
@@ -98,7 +98,14 @@ export default class Menu extends React.Component {
                   <Link to="/">CONTACT US</Link>
                 </ListItem>
                 <ListItem className="mobile-menu-item">
-                  <Button variant="outlined" color="primary" size="small">
+                  <Button
+                    variant="outlined"
+                    color="primary"
+                    size="small"
+                    href={this.props.typeformURL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     START A PROJECT
                   </Button>
                 </ListItem>
@@ -142,7 +149,14 @@ export default class Menu extends React.Component {
                 <Link to="/">CONTACT US</Link>
               </Grid>
               <Grid item>
-                <Button variant="outlined" color="primary" size="small">
+                <Button
+                  variant="outlined"
+                  color="primary"
+                  size="small"
+                  href={this.props.typeformURL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   START A PROJECT
                 </Button>
               </Grid>
@@ -151,7 +165,7 @@ export default class Menu extends React.Component {
         </Grid>
       </header>
     )
-  }
+  };
 
   render() {
     return (

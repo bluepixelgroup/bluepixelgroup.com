@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Grid, Chip } from "@material-ui/core";
 import Img from "gatsby-image";
 import { graphql } from "gatsby";
+import { Helmet } from "react-helmet";
 
 import Layout from "../components/Layout";
 import TestimonialCard from "../components/common/TestimonialCard";
@@ -56,6 +57,10 @@ export default ({ data }) => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>{post.frontmatter.title} | Blue Pixel</title>
+        <link rel="canonical" href="https://bluepixelgroup.com/case-studies" />
+      </Helmet>
       <Container className="project-template-container">
         <p className="page-category">CASE STUDIES</p>
         <h1 className="case-study-title">{post.frontmatter.title}</h1>
@@ -98,7 +103,12 @@ export default ({ data }) => {
             </Grid>
             { post.frontmatter.projectLink &&
               <Grid item>
-                <a className="project-link stat-item" target="_blank" href={post.frontmatter.projectLink}>
+                <a
+                  className="project-link stat-item"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={post.frontmatter.projectLink}
+                >
                   View project &nbsp;&nbsp;&nbsp;<LinkIcon/>
                 </a>
               </Grid>

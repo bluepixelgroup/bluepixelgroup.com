@@ -12,7 +12,7 @@ import AmazonSVG from "../assets/images/landing-hero/aws.inline.svg";
 import AzureSVG from "../assets/images/landing-hero/azure.inline.svg";
 import "./Hero.scss";
 
-export default () => {
+export default ({typeformURL}) => {
   return (
     <div className="hero">
       <Container>
@@ -36,9 +36,15 @@ export default () => {
             Ipsum as their default model text, and a search for 'lorem ipsum'
             will uncover.
           </p>
-          <Button variant="contained" color="primary"
-                  className="btn-start-project">
-            start a project
+          <Button
+            variant="contained"
+            color="primary"
+            className="btn-start-project"
+            href={typeformURL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Start a project
           </Button>
           <small className="btn-info">* Free quote for your project</small>
         </div>

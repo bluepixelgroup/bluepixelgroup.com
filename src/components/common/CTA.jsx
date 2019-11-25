@@ -1,10 +1,11 @@
-import React from "react"
-import { Link } from "gatsby"
-import { Container, Grid, Button } from "@material-ui/core"
+import React from "react";
+import { Link } from "gatsby";
+import { Container, Grid, Button } from "@material-ui/core";
 
-import "./CTA.scss"
+import "./CTA.scss";
 
-export default () => {
+
+export default ({ typeformURL }) => {
   return (
     <div className="cta">
       <Container>
@@ -20,8 +21,14 @@ export default () => {
           <Grid item>
             <Grid container direction="column" alignItems="flex-end">
               <Grid item>
-                <Button variant="contained" color="primary">
-                  start a project
+                <Button
+                  variant="contained"
+                  color="primary"
+                  href={typeformURL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Start a project
                 </Button>
               </Grid>
               <Grid item className="contact-link-container">

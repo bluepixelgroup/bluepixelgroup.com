@@ -1,6 +1,6 @@
 import React from "react"
-
 import {graphql} from "gatsby";
+import { Helmet } from "react-helmet";
 
 import Layout from "../components/Layout"
 import Hero from "../components/Hero";
@@ -9,13 +9,17 @@ import Portfolio from "../components/Portfolio";
 import OneStop from "../components/OneStop";
 import Team from "../components/Team";
 
-import '../assets/styles/_main.scss';
+import '../assets/styles/style.scss';
 
 
 export default ({data}) => {
   return (
     <Layout>
-      <Hero/>
+      <Helmet>
+        <title>Blue Pixel - The fastest and most convenient way to deliver your software.</title>
+        <link rel="canonical" href="https://bluepixelgroup.com/" />
+      </Helmet>
+      <Hero typeformURL={data.site.siteMetadata.typeformURL} />
       <Technology />
       <Portfolio data={data} seeMoreButton={true}/>
       <OneStop />
@@ -26,6 +30,11 @@ export default ({data}) => {
 
 export const query = graphql`
     query {
+      site {
+        siteMetadata {
+          typeformURL
+        }
+      }
       allMarkdownRemark(
       filter: {frontmatter: {featured: {eq: true}}}, limit: 3, sort: {order: DESC, fields: frontmatter___date}) {
         edges {
