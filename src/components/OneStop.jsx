@@ -27,10 +27,13 @@ const OneStop = () => (
         >
           <Grid item xs={12} md={6}>
             <h2>One Stop, Deep Insights.</h2>
-            <p>Whether as your partner who accompanies your projects.</p>
             <p>
-              A product planned and delivered by us over multiple milestones for a fixed price. Regardless if you only got
-              an idea or ready UI designs - we execute for you following a transparent process.
+              Whether as partner who builds your projects from idea to end-product or as a project-oriented team
+              that realizes everything you need in the most effective way.
+            </p>
+            <p>
+              We plan and deliver over multiple milestones, for a fixed price. Regardless if you only
+              got an idea or ready UI designs, we execute our job following a transparent process.
             </p>
             <Button
               variant="contained"
@@ -52,22 +55,22 @@ const OneStop = () => (
               <Item
                 icon={ModularIcon}
                 title="Modular"
-                details="Combine symbols to create multiple UI components."
+                details="Creating UI components that independent and reusable."
               />
               <Item
                 icon={CustomizableIcon}
                 title="Customizable"
-                details="Shared styles and Symbols can be customized easily."
+                details="Easily customizable so that you create your unique style guide."
               />
               <Item
                 icon={ScalableIcon}
                 title="Scalable"
-                details="Quickly scale your design while maintaining consistency."
+                details="Quickly scale your product while maintaining consistency."
               />
               <Item
                 icon={ResponsiveIcon}
                 title="Responsive"
-                details="UI elements are optimised for resizing for most devices."
+                details="All elements are fully responsive so they work on any device."
               />
             </Grid>
           </Grid>

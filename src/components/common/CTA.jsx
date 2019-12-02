@@ -11,11 +11,10 @@ export default ({ typeformURL }) => {
       <Container>
         <Grid container justify="space-between">
           <Grid item xs={12} md={8}>
-            <h4>Interested? Have any project?</h4>
+            <h4>Interested? Have any projects?</h4>
             <p className="text-black">
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum. Duis aute irure dolor
-              in reprehenderit in voluptate.
+              Get everything you need to build your amazing product. We have the best tech talent to make your vision
+              feasible!
             </p>
           </Grid>
           <Grid item>

@@ -13,7 +13,7 @@ const Team = () => (
     <Separator />
     <Section
       title="Our Team"
-      subtitle="State-of-the-art lorem ipsum ot grow your business. JavaScript class that can be used to quickly create animations that display numerical."
+      subtitle="Our team is your team. We know you need the best people to build your vision, so we got your back! Get to know your team below."
       className="team"
       id="team"
     >
