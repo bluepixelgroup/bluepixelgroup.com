@@ -1,5 +1,5 @@
 ---
-title: "Project one title"
+title: "How we helped Yournet build a web proxy solution"
 date: "2017-08-21"
 
 testimonial: "Great testimonial for project one"

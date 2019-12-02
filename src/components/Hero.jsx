@@ -24,7 +24,7 @@ export default ({typeformURL}) => {
                 options={{
                   strings: ['deliver your software.',
                     'build great products.',
-                    'something else here.'],
+                    'launch your MVP.'],
                   autoStart: true,
                   loop: true,
                 }}
