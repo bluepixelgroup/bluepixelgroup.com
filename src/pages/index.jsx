@@ -22,7 +22,7 @@ export default ({data}) => {
       <Hero typeformURL={data.site.siteMetadata.typeformURL} />
       <Technology />
       <Portfolio data={data} seeMoreButton={true}/>
-      <OneStop />
+      <OneStop typeformURL={data.site.siteMetadata.typeformURL} />
       <Team />
     </Layout>
   )

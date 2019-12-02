@@ -13,7 +13,7 @@ import * as ResponsiveIcon from '../assets/images/icons/responsive.svg';
 
 
 
-const OneStop = () => (
+const OneStop = ({ typeformURL }) => (
   <React.Fragment>
     <Separator />
     <section className="section-one-stop" id="capabilities">
@@ -39,6 +39,9 @@ const OneStop = () => (
               variant="contained"
               color="primary"
               className="btn-start-project"
+              href={typeformURL}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Get free quota
             </Button>
