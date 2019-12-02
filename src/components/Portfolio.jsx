@@ -16,7 +16,7 @@ const Portfolio = ({data, seeMoreButton}) => {
       <Separator/>
       <Section
         title="Projects built by us"
-        subtitle="State-of-the-art lorem ipsum ot grow your business. JavaScript class that can be used to quickly create animations that display numerical."
+        subtitle="We are all excited to show our work and share with you our amazing experiences we had during the development stages of each project."
         className="projects-built"
       >
         <Container>
