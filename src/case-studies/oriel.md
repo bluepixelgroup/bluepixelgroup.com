@@ -1,5 +1,5 @@
 ---
-title: "How we helped Oriel.io to build their GDPR solution"
+title: "How we helped Oriel.io build their GDPR solution"
 date: "2017-08-21"
 testimonial: "Oriel contracted with the Blue Pixel team to help build our Consent Management Solution.  Without their help and development skills we simply could not have delivered this project to plan.  Blue Pixel delivered on time, to spec and in budget, so I have no hesitation in recommending their company and will definitely use them again."
 author:
@@ -10,7 +10,7 @@ author:
 projectName: "Oriel"
 projectLink: "http://oriel.io"
 featuredImage: ../assets/images/portfolio/oriel-icon.png
-projectShortDescription: "Holder text for use in your graphic, print and web layouts, and discover plugins for."
+projectShortDescription: "How we helped Oriel.io build their GDPR solution"
 featured: true
 coverImage: ../assets/images/portfolio/oriel-cover.png
 tags:
@@ -30,13 +30,33 @@ media:
 ---
 
 ## Challenge
+Starting 25 May 2018 The General Data Protection Regulation (EU) 2016/679 (“GDPR”) came into effect and companies were forced 
+to provide solutions that are compliant with the new regulation. Publishers were faced with the need to collect, store and respect 
+user consent in regards to the use of their personal data and users were seeking a way to manage their digital identity and decide 
+which entities should have access to their personal data. In order to mitigate the publisher's risk of breaching GDPR, Oriel proposed 
+a SaaS solution for collecting and managing user consent.
 
-The General Data Protection Regulation (EU) 2016/679 (“GDPR”) is an EU regulation whose purpose is to give individuals control over their personal data, for protecting their privacy and for addressing the export of such data outside of the EU, replacing the Data Protection Directive 95/46/EC.
 
 ## Solution
+The solution was based on the [Transparency & Consent Framework](https://iabeurope.eu/tcf-for-cmps/) (“TCF”) 
+for building a Consent Management Platform (“CMP”) offered by the [Interactive Advertising Bureau](https://www.iab.com/) (“IAB”).
+The final solution contained the following:
 
-Disabling or limiting the expiry date of the tracking cookie is not the advice of the Dutch DPA and it’s a little know fact that it can be done.
+###### CMP Widget
+A configurable widget that the publisher would load inside the website. The TCF compliant widget was built using JavaScript and Preact 
+and allowed users to give (or revoke) consent for the publisher to share the user's personal data with third parties. The widget offered 
+granular consent, meaning that the user is able to decide for which purposes his personal data will be used (E.g. Content selection, delivery, reporting, etc.)
 
-If you’re using “analytics.js” the tracking cookie is named by default “_ga” and it’s set to expire in 2 years. That may be too much and by limiting its maximum age you can address privacy concerns while still being able to track the number of unique users for the marketing campaigns that you care about.
+###### Website Scanner
+A tool that the publishers can use to scan their website in order to see if they are in breach of GDPR. The tool scans 
+the website and creates a report with all the cookies and trackers divided using a proprietary scoring algorithm into 
+3 categories: High Risk, Medium Risk, and Low risk.
 
-WARNING: Disabling the tracking cookie will make GA unable to accurately track unique users, so you’re going to lose accuracy. However if hard pressed to use an implementation that drops no tracking cookies at all, this can be achieving on the client-side via this:
+###### Oriel dashboard
+A dashboard where the clients could customize the look and feel of the widget, configure the widget for each website they own,
+get a view of their website analytics, scan the website in order to see if they are GDPR compliant,
+see billing details and upgrade/downgrade their pricing plan. 
+
+###### Oriel website
+The company website, which was the main entry-point of the solution, provided the user with a light scan of their
+website to see if they are GDPR compliant and a smooth onboarding process for the new customers.

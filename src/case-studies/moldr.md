@@ -1,5 +1,5 @@
 ---
-title: "Project three title"
+title: "Moldr.io"
 date: "2017-08-21"
 projectName: "Moldr"
 featuredImage: ../assets/images/portfolio/moldr-icon.png
