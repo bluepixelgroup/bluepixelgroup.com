@@ -12,6 +12,8 @@ import {
   Link as MUILink,
 } from "@material-ui/core";
 
+import { handleDrift } from "../utils";
+
 import "./Menu.scss";
 import BluePixelLogo from "../assets/images/logo.inline.svg";
 import HamburgerIcon from "../assets/images/hamburger.inline.svg";
@@ -25,14 +27,6 @@ export default class Menu extends React.Component {
 
   toggleDrawer = opened => {
     this.setState({ drawerOpened: opened })
-  };
-
-  handleDrift = (event) => {
-    event.preventDefault();
-
-    window.drift && window.drift.on('ready', (api) => {
-      api.openChat();
-    });
   };
 
   renderMobileMenu = () => {
@@ -155,7 +149,7 @@ export default class Menu extends React.Component {
                 <Link to="/#team">TEAM</Link>
               </Grid>
               <Grid item className="menu-item">
-                <MUILink href="#" onClick={this.handleDrift}>CONTACT US</MUILink>
+                <MUILink href="#" onClick={handleDrift}>CONTACT US</MUILink>
               </Grid>
               <Grid item>
                 <Button
