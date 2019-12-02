@@ -21,7 +21,7 @@ const Technology = () => (
     <Separator />
     <Section
       title="Our Technology"
-      subtitle="State-of-the-art lorem ipsum ot grow your business."
+      subtitle="State-of-the-art technology to grow your business."
       className="technology"
       id="technology"
     >
@@ -48,19 +48,18 @@ const Technology = () => (
                   Introducing the API to go beyond
                 </h5>
                 <p>
-                  The passage is attributed to an unknown typesetter in the 15th century who is thought to have Malorum
-                  for use in a type specimen book.
+                  Building the API for your services, like other programming skills is part art, part science.
                 </p>
 
                 <BackTechItem
-                  icon={ApiIcon}
-                  title="WordPress APIs"
-                  details="The Wordpress API stands for the WordPress Application Programming Interfce."
-                />
-                <BackTechItem
                   icon={SquareCloudIcon}
                   title="Cloud APIs"
-                  details="The Wordpress API stands for the WordPress Application Programming Interfce."
+                  details="We use already existing back-end architecture, such as Firebase and Parse, for building intensive and feature-rich applications."
+                />
+                <BackTechItem
+                  icon={ApiIcon}
+                  title="Custom APIs"
+                  details="Complicated as it may sound, creating a custom API service is actually quite easy. The go-to when everything else is not working for you."
                 />
               </div>
             </Grid>
@@ -75,11 +74,11 @@ const Technology = () => (
                   /> Client
                 </div>
                 <h5 className="text-blue" style={{marginTop: 15, marginBottom: 25}}>
-                  Introducing the client to go beyond
+                  Introducing the frontend toolbox to go beyond
                 </h5>
                 <p>
-                  The passage is attributed to an unknown typesetter in the 15th century who is thought to have Malorum
-                  for use in a type specimen book.
+                  The client-side development that we do, ranges from building Web Applications all the way mobile
+                  so that a user can see and interact with your product directly.
                 </p>
 
                 <Grid
@@ -93,22 +92,22 @@ const Technology = () => (
                   <ClientTechItem
                     icon={ReactIcon}
                     lang="React.js"
-                    details="Reference site about Lorem Ipsum, giving information."
+                    details="We use it to create reusable UI components which present data that changes over time."
                   />
                   <ClientTechItem
                     icon={VueIcon}
                     lang="Vue.js"
-                    details="Reference site about Lorem Ipsum, giving information."
+                    details="Helps us build awesome Single-Page Applications from ground to top floor."
                   />
                   <ClientTechItem
                     icon={JavaScriptIcon}
                     lang="JavaScript"
-                    details="Reference site about Lorem Ipsum, giving information."
+                    details="We take pride in building the most lightweight libraries that satisfy your needs."
                   />
                   <ClientTechItem
                     icon={ReactIcon}
                     lang="React Native"
-                    details="Reference site about Lorem Ipsum, giving information."
+                    details="We combine the best parts of native development with React, to build your mobile apps."
                   />
                 </Grid>
               </div>

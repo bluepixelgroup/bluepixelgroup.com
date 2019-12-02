@@ -32,9 +32,8 @@ export default ({typeformURL}) => {
             </span>
           </h1>
           <p>
-            Many desktop publishing packages and web page editors now use Lorem
-            Ipsum as their default model text, and a search for 'lorem ipsum'
-            will uncover.
+            We are committed to meeting the expectations of our customers. We achieve this by mixing
+            technology and innovation to deliver the best experience.
           </p>
           <Button
             variant="contained"
