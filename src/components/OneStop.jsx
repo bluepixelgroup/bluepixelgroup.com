@@ -12,7 +12,6 @@ import * as ScalableIcon from '../assets/images/icons/scalable.svg';
 import * as ResponsiveIcon from '../assets/images/icons/responsive.svg';
 
 
-
 const OneStop = ({ typeformURL }) => (
   <React.Fragment>
     <Separator />
