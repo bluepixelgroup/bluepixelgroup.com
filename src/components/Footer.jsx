@@ -1,14 +1,19 @@
-import React from "react"
-import { Link } from "gatsby"
-import { Grid, List, ListItem, Container, IconButton } from "@material-ui/core"
+import React from "react";
+import { Link } from "gatsby";
+import {
+  Grid, List, ListItem, Container, IconButton,
+  Link as MUILink,
+} from "@material-ui/core";
 
-import BluePixelLogo from "../assets/images/logo.inline.svg"
-import FacebookIcon from "../assets/images/facebookicon.inline.svg"
-import LinkedInIcon from "../assets/images/linkedinicon.inline.svg"
-import TwitterIcon from "../assets/images/twittericon.inline.svg"
-import GithubIcon from "../assets/images/githubicon.inline.svg"
+import { handleDrift } from "../utils";
 
-import "./Footer.scss"
+import "./Footer.scss";
+import BluePixelLogo from "../assets/images/logo.inline.svg";
+import FacebookIcon from "../assets/images/facebookicon.inline.svg";
+import LinkedInIcon from "../assets/images/linkedinicon.inline.svg";
+import TwitterIcon from "../assets/images/twittericon.inline.svg";
+import GithubIcon from "../assets/images/githubicon.inline.svg";
+
 
 const FooterColumn = props => {
   return (
@@ -26,7 +31,7 @@ const FooterColumn = props => {
       ))}
     </List>
   )
-}
+};
 
 export default () => {
   return (
@@ -85,12 +90,17 @@ export default () => {
                   <Link className="footer-link" to="/">
                     About us
                   </Link>,
-                  <Link className="footer-link" to="/">
+                  <MUILink className="footer-link" href="#" onClick={handleDrift}>
                     Contact us
-                  </Link>,
-                  <Link className="footer-link" to="/">
+                  </MUILink>,
+                  <a
+                    className="footer-link"
+                    href="https://medium.com/bluepixelio"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Blog
-                  </Link>,
+                  </a>,
                 ]}
               />
             </Grid>
@@ -98,16 +108,36 @@ export default () => {
         </Grid>
         <Grid container justify="space-between" className="info-links-container">
           <Grid item xs={12} sm={6} md={5} lg={7}>
-            <IconButton size="small" href="https://linkedin.com/">
+            <IconButton
+              size="small"
+              href="https://linkedin.com/company/bluepixelgroup/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <LinkedInIcon />
             </IconButton>
-            <IconButton size="small" href="https://twitter.com">
+            <IconButton
+              size="small"
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <TwitterIcon />
             </IconButton>
-            <IconButton size="small" href="https://facebook.com">
+            <IconButton
+              size="small"
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FacebookIcon />
             </IconButton>
-            <IconButton size="small" href="https://github.com">
+            <IconButton
+              size="small"
+              href="https://github.com/bluepixelio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <GithubIcon />
             </IconButton>
           </Grid>

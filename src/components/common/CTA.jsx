@@ -3,17 +3,10 @@ import Link from '@material-ui/core/Link';
 import { Container, Grid, Button } from "@material-ui/core";
 
 import "./CTA.scss";
+import { handleDrift } from "../../utils";
 
 
 export default ({ typeformURL }) => {
-  const handleDrift = (event) => {
-    event.preventDefault();
-
-    window.drift && window.drift.on('ready', (api) => {
-      api.openChat();
-    });
-  };
-
   return (
     <div className="cta">
       <Container>
