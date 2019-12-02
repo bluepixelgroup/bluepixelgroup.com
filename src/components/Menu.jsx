@@ -8,7 +8,8 @@ import {
   ListItem,
   IconButton,
   Hidden,
-  Container
+  Container,
+  Link as MUILink,
 } from "@material-ui/core";
 
 import "./Menu.scss";
@@ -24,6 +25,14 @@ export default class Menu extends React.Component {
 
   toggleDrawer = opened => {
     this.setState({ drawerOpened: opened })
+  };
+
+  handleDrift = (event) => {
+    event.preventDefault();
+
+    window.drift && window.drift.on('ready', (api) => {
+      api.openChat();
+    });
   };
 
   renderMobileMenu = () => {
@@ -95,7 +104,7 @@ export default class Menu extends React.Component {
                   <Link to="/#team">TEAM</Link>
                 </ListItem>
                 <ListItem className="mobile-menu-item">
-                  <Link to="/">CONTACT US</Link>
+                  <MUILink href="#" onClick={this.handleDrift}>CONTACT US</MUILink>
                 </ListItem>
                 <ListItem className="mobile-menu-item">
                   <Button
@@ -146,7 +155,7 @@ export default class Menu extends React.Component {
                 <Link to="/#team">TEAM</Link>
               </Grid>
               <Grid item className="menu-item">
-                <Link to="/">CONTACT US</Link>
+                <MUILink href="#" onClick={this.handleDrift}>CONTACT US</MUILink>
               </Grid>
               <Grid item>
                 <Button

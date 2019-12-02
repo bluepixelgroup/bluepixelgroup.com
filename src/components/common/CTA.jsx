@@ -1,11 +1,19 @@
 import React from "react";
-import { Link } from "gatsby";
+import Link from '@material-ui/core/Link';
 import { Container, Grid, Button } from "@material-ui/core";
 
 import "./CTA.scss";
 
 
 export default ({ typeformURL }) => {
+  const handleDrift = (event) => {
+    event.preventDefault();
+
+    window.drift && window.drift.on('ready', (api) => {
+      api.openChat();
+    });
+  };
+
   return (
     <div className="cta">
       <Container>
@@ -32,7 +40,7 @@ export default ({ typeformURL }) => {
               </Grid>
               <Grid item className="contact-link-container">
                 <span className="text-black">
-                  or <Link className="contact-link" to="/">contact us</Link>
+                  or <Link href="#" className="contact-link" onClick={handleDrift}>contact us</Link>
                 </span>
               </Grid>
             </Grid>
