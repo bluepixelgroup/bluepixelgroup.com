@@ -2,10 +2,12 @@
 title: "How we helped Yournet build a web proxy solution"
 date: "2020-12-31"
 
+testimonial: "I’ve worked with the BluePixel team on a couple of projects with the most recent one being Yournet. The guys are great to work with and are prepared to go the extra mile to solve issues, think outside the box and keep the customer happy. All of this is in addition to their technical expertise and project management skills. A very strong team and great value for money!"
 author:
   name: "James Quinn"
   role: "Co-founder"
   company: "Yournet"
+  image: ../assets/images/case-studies/yournet-author.png
 
 projectName: "Yournet"
 featuredImage: ../assets/images/case-studies/yournet-icon.png

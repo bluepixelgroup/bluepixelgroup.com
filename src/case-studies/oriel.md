@@ -1,12 +1,14 @@
 ---
 title: "How we helped Oriel.io build their GDPR solution"
 date: "2019-10-01"
+
 testimonial: "Oriel contracted the Blue Pixel team to help build our Consent Management Solution. Without their help and development skills, we simply could not have delivered this project to plan. They delivered on time, to spec and in the budget, so I have no hesitation in recommending their company and will definitely use them again."
 author:
   name: "Aidan Joyce"
   role: "CEO"
   company: "Oriel Ventures"
   image: ../assets/images/case-studies/oriel-author.jpg
+  
 projectName: "Oriel"
 projectLink: "http://oriel.io"
 featuredImage: ../assets/images/case-studies/oriel-icon.png
