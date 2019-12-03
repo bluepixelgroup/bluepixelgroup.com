@@ -147,6 +147,7 @@ export const query = graphql`
         }
         projectLink
         coverImage {
+          publicURL
           childImageSharp {
             fluid(maxWidth: 1280) {
               ...GatsbyImageSharpFluid
