@@ -54,6 +54,8 @@ const StatList = (props) => {
 
 export default ({ data }) => {
   const post = data.markdownRemark;
+  let seoTags = post.frontmatter.tags || [];
+  seoTags = seoTags.concat(post.frontmatter.tech || []);
 
   return (
     <Layout>
@@ -62,6 +64,7 @@ export default ({ data }) => {
         pathname={post.fields.slug}
         description={post.excerpt}
         image={post.frontmatter.coverImage.publicURL}
+        tags={seoTags}
         article={true}
       />
       <Container className="project-template-container">

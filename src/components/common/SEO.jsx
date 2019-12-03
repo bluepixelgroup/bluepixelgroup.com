@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import { graphql, useStaticQuery } from "gatsby";
 
 
-const SEO = ({ title, description, image, pathname, article }) => {
+const SEO = ({ title, description, image, pathname, tags, article }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -22,15 +22,16 @@ const SEO = ({ title, description, image, pathname, article }) => {
     description: description || data.site.siteMetadata.description,
     image: `${data.site.siteMetadata.siteUrl}${image || data.site.siteMetadata.image}`,
     url: `${data.site.siteMetadata.siteUrl}${pathname || "/"}`,
+    keywords: tags || [],
   };
 
   return (
     <Helmet>
       <title>{seo.title}</title>
       <link rel="canonical" href={seo.url} />
-
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
+      {seo.keywords.length > 0 && <meta name="keywords" content={seo.keywords.join(", ")} /> }
       {seo.url && <meta property="og:url" content={seo.url} />}
       {article && <meta property="og:type" content="article" /> }
       {seo.title && <meta property="og:title" content={seo.title} />}
