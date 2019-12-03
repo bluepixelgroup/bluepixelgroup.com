@@ -6,13 +6,13 @@ author:
   name: "Aidan Joyce"
   role: "CEO"
   company: "Oriel Ventures"
-  image: ../assets/images/portfolio/oriel-author.jpg
+  image: ../assets/images/case-studies/oriel-author.jpg
 projectName: "Oriel"
 projectLink: "http://oriel.io"
-featuredImage: ../assets/images/portfolio/oriel-icon.png
+featuredImage: ../assets/images/case-studies/oriel-icon.png
 projectShortDescription: "How we helped Oriel.io build their GDPR solution."
 featured: true
-coverImage: ../assets/images/portfolio/oriel-cover.png
+coverImage: ../assets/images/case-studies/matthew-henry-fPxOowbR6ls-unsplash.png
 tags:
   - Privacy
   - GDPR
@@ -29,8 +29,8 @@ stats:
   weeks: 32
   persons: 3
 media:
-  - ../assets/images/portfolio/media/oriel-scan.png
-  - ../assets/images/portfolio/media/oriel-landing.png
+  - ../assets/images/case-studies/media/oriel-scan.png
+  - ../assets/images/case-studies/media/oriel-landing.png
 ---
 
 ### Challenge

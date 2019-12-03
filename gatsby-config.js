@@ -23,7 +23,7 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: `${__dirname}/src/assets/images/portfolio`,
+        path: `${__dirname}/src/assets/images/case-studies`,
       },
     },
     "gatsby-transformer-remark",
