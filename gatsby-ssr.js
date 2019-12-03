@@ -29,7 +29,7 @@ export const onRenderBody = ({setHeadComponents}) => {
             }
           }();
           drift.SNIPPET_VERSION = '0.3.1';
-          drift.load('yhdb4smvfkm6');
+          drift.load('g4eurhkn4cea');
         `
       }} />,
   ]);
