@@ -8,11 +8,11 @@ author:
   company: "Yournet"
 
 projectName: "Yournet"
-featuredImage: ../assets/images/portfolio/yournet-icon.png
+featuredImage: ../assets/images/case-studies/yournet-icon.png
 projectShortDescription: "How we helped Yournet build a web proxy solution"
 projectLink: "https://yournet.io"
 featured: true
-coverImage: ../assets/images/portfolio/oriel-cover.png
+coverImage: ../assets/images/case-studies/christian-wiediger-NsWxB6qCLvs-unsplash.png
 tags:
   - Proxy
   - VPN
@@ -24,13 +24,16 @@ tech:
   - Squid
   - Node.js
   - React.js
-  - Javascript
+  - JavaScript
 stats:
   weeks: 21
   persons: 3
   
 media:
-  - ../assets/images/portfolio/media/yournet.png  
+  - ../assets/images/case-studies/media/yournet-install-successful.png
+  - ../assets/images/case-studies/media/yournet-extension.png
+  - ../assets/images/case-studies/media/yournet-get-time.png
+  - ../assets/images/case-studies/media/yournet.png
 ---
 
 ### Challenge

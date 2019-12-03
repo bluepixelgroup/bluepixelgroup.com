@@ -2,23 +2,29 @@
 title: "Stepping up the innovation cycle through an idea-submission-platform."
 date: "2017-12-11"
 projectName: "Moldr"
-featuredImage: ../assets/images/portfolio/moldr-icon.png
+featuredImage: ../assets/images/case-studies/moldr-icon.png
 projectShortDescription: "Stepping up the innovation cycle through an idea-submission-platform."
 projectLink: "https://moldr.io"
 featured: true
-coverImage: ../assets/images/portfolio/oriel-cover.png
+coverImage: ../assets/images/case-studies/austin-distel-wD1LRb9OeEo-unsplash.png
 tags:
-  - Pitch
+  - Pitch deck
   - Innovation
   - Milestone Plan
-  - B2B / B2C
+  - B2B
+  - B2C
 tech:
   - Node.js
   - React.js
-  - Javascript
+  - JavaScript
 stats:
   weeks: 15
   persons: 2
+
+media:
+  - ../assets/images/case-studies/media/moldr-dashboard-business-modeler.png
+  - ../assets/images/case-studies/media/moldr-dashboard-project-plan-milestones.png
+  - ../assets/images/case-studies/media/moldr-payment-details.png
 ---
 
 
