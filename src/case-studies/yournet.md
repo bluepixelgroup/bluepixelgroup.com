@@ -14,12 +14,14 @@ projectLink: "https://yournet.io"
 featured: true
 coverImage: ../assets/images/portfolio/oriel-cover.png
 tags:
-  - Privacy
-  - GDPR
-  - ePrivacy
+  - Proxy
+  - VPN
+  - Geo-blocking
 tech:
   - Python
   - Django
+  - Terraform
+  - Squid
   - Node.js
   - React.js
   - Javascript
