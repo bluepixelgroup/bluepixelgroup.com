@@ -1,6 +1,6 @@
 ---
 title: "How we helped Yournet build a web proxy solution"
-date: "2017-08-21"
+date: "2020-12-31"
 
 author:
   name: "James Quinn"
