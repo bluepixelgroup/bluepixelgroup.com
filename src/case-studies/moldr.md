@@ -1,9 +1,9 @@
 ---
 title: "Stepping up the innovation cycle through an idea-submission-platform."
-date: "2017-08-21"
+date: "2017-12-11"
 projectName: "Moldr"
 featuredImage: ../assets/images/portfolio/moldr-icon.png
-projectShortDescription: "English to emphasise design elements over content. It's also called placeholder (or filler)."
+projectShortDescription: "Stepping up the innovation cycle through an idea-submission-platform."
 projectLink: "https://moldr.io"
 featured: true
 coverImage: ../assets/images/portfolio/oriel-cover.png

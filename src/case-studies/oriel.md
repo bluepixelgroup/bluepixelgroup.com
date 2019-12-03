@@ -1,6 +1,6 @@
 ---
 title: "How we helped Oriel.io build their GDPR solution"
-date: "2017-08-21"
+date: "2019-10-01"
 testimonial: "Oriel contracted the Blue Pixel team to help build our Consent Management Solution. Without their help and development skills, we simply could not have delivered this project to plan. They delivered on time, to spec and in the budget, so I have no hesitation in recommending their company and will definitely use them again."
 author:
   name: "Aidan Joyce"
@@ -10,7 +10,7 @@ author:
 projectName: "Oriel"
 projectLink: "http://oriel.io"
 featuredImage: ../assets/images/portfolio/oriel-icon.png
-projectShortDescription: "How we helped Oriel.io build their GDPR solution"
+projectShortDescription: "How we helped Oriel.io build their GDPR solution."
 featured: true
 coverImage: ../assets/images/portfolio/oriel-cover.png
 tags:
@@ -23,6 +23,8 @@ tech:
   - Node.js
   - React.js
   - Javascript
+  - ElasticSearch
+  - Puppeteer
 stats:
   weeks: 32
   persons: 3
@@ -62,3 +64,23 @@ see billing details and upgrade/downgrade their pricing plan.
 ###### Oriel website
 The company website, which was the main entry-point of the solution, provided the user with a light scan of their
 website to see if they are GDPR compliant and a smooth onboarding process for the new customers.
+
+### Features:
+- Landing Page
+- Onboarding tutorial and Tooltips Engine
+- Overview / Dashboard with stats
+- Aggregated stats - monthly, weekly, daily and hourly
+- Payment system - SaaS with 4 different pricing plans (Stripe integration)
+- Export XLS and CSV
+- Freemium Access Capabilities / Limitations based on the current plan
+- Email Notifications Engine
+- Data Security (Encryption)
+- Permissions
+- Administration Panel (Users, Stats, Websites, etc)
+- Tracking and Usage
+- Support Center (via 3rd party Crisp)
+- Cookie/Tracker Scanner
+- Scoring cookies/tracking algorithm
+- Consent Management Widget
+- Localization support (for Widget)
+- Multiple SDKs for easy installation of the CMP (PHP, Wordpress, Drupal, Python, Django, Java, and Node.js)
