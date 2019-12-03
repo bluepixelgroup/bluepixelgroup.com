@@ -2,10 +2,10 @@ import React from "react";
 import { Container, Grid, Chip } from "@material-ui/core";
 import Img from "gatsby-image";
 import { graphql } from "gatsby";
-import { Helmet } from "react-helmet";
 
 import Layout from "../components/Layout";
 import TestimonialCard from "../components/common/TestimonialCard";
+import SEO from "../components/common/SEO";
 
 import CalendarIcon from "../assets/images/calendaricon.inline.svg"
 import TeamIcon from "../assets/images/teamicon.inline.svg"
@@ -57,10 +57,13 @@ export default ({ data }) => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>{post.frontmatter.title} | Blue Pixel</title>
-        <link rel="canonical" href="https://bluepixelgroup.com/case-studies" />
-      </Helmet>
+      <SEO
+        title={`${post.frontmatter.title} | Blue Pixel`}
+        pathname={post.fields.slug}
+        description={post.excerpt}
+        image={post.frontmatter.coverImage.publicURL}
+        article={true}
+      />
       <Container className="project-template-container">
         <p className="page-category">CASE STUDIES</p>
         <h1 className="case-study-title">{post.frontmatter.title}</h1>
@@ -127,6 +130,10 @@ export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      excerpt
+      fields {
+        slug
+      }
       frontmatter {
         title
         tags
