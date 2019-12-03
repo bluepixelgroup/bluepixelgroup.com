@@ -22,8 +22,9 @@ export default ({ data }) => {
         title="We have stories to inspire you"
         subtitle="Over the years, businesses have trusted us for the agility, neatness and the robustness we promise and deliver."
         buttonTitle="Read ALL Stories"
+        anchorLink="/case-studies/#portfolio"
       />
-      <Testimonials data={data} />
+      <Testimonials data={data}/>
       <Portfolio data={data}/>
     </Layout>
   )
