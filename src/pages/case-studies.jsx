@@ -20,7 +20,7 @@ export default ({ data }) => {
       <GenericHero
         sectionTitle="Case Studies"
         title="We have stories to inspire you"
-        subtitle="Over the years, business have trusted us for the agility, neatness and the robustness we promise and deliver"
+        subtitle="Over the years, businesses have trusted us for the agility, neatness and the robustness we promise and deliver."
         buttonTitle="Read ALL Stories"
       />
       <Testimonials data={data} />

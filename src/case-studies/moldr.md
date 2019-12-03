@@ -7,7 +7,6 @@ projectShortDescription: "English to emphasise design elements over content. It'
 projectLink: "https://moldr.io"
 featured: true
 coverImage: ../assets/images/portfolio/oriel-cover.png
-testimonial: "hello"
 author:
   name: "J Q"
   role: "dev"
