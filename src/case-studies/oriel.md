@@ -29,10 +29,9 @@ stats:
 media:
   - ../assets/images/portfolio/media/oriel-scan.png
   - ../assets/images/portfolio/media/oriel-landing.png
-  - ../assets/images/portfolio/media/yournet.png
 ---
 
-## Challenge
+### Challenge
 Starting 25 May 2018 The General Data Protection Regulation (EU) 2016/679 (“GDPR”) came into effect and companies were forced 
 to provide solutions that are compliant with the new regulation. Publishers were faced with the need to collect, store and respect 
 user consent in regards to the use of their personal data and users were seeking a way to manage their digital identity and decide 
@@ -40,7 +39,7 @@ which entities should have access to their personal data. In order to mitigate t
 a SaaS solution for collecting and managing user consent.
 
 
-## Solution
+### Solution
 The solution was based on the [Transparency & Consent Framework](https://iabeurope.eu/tcf-for-cmps/) (“TCF”) 
 for building a Consent Management Platform (“CMP”) offered by the [Interactive Advertising Bureau](https://www.iab.com/) (“IAB”).
 The final solution contained the following:
