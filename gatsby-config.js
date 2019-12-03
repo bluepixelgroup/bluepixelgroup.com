@@ -8,6 +8,10 @@ module.exports = {
   siteMetadata: {
     typeformURL: 'https://bluepixel.typeform.com/to/PZrALr',
     siteUrl: "https://bluepixelgroup.com",
+    title: "Blue Pixel - The fastest and most convenient way to deliver your software.",
+    description: "We are committed to meeting the expectations of our customers. We achieve this by mixing technology and innovation to deliver the best experience.",
+    image: "/logo.jpg", // Path to your image you placed in the 'static' folder
+    // twitterUsername: "@occlumency",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
