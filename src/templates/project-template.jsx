@@ -131,7 +131,10 @@ export const query = graphql`
         title
         tags
         tech
-        stats
+        stats {
+          weeks
+          persons
+        }
         projectLink
         coverImage {
           childImageSharp {
