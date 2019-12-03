@@ -23,6 +23,9 @@ tech:
   - Node.js
   - React.js
   - Javascript
+stats:
+  weeks: 21
+  persons: 3
 ---
 
 Do Pandas eat bananas? Check out this short video that shows that yes! pandas do

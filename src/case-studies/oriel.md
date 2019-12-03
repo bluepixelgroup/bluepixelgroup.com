@@ -23,6 +23,9 @@ tech:
   - Node.js
   - React.js
   - Javascript
+stats:
+  weeks: 32
+  persons: 3
 media:
   - ../assets/images/portfolio/media/oriel-scan.png
   - ../assets/images/portfolio/media/oriel-landing.png

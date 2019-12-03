@@ -72,23 +72,26 @@ export default ({ data }) => {
         <Grid container justify="space-between">
           <Grid item xs={12} md={7} lg={8}>
             <article dangerouslySetInnerHTML={{ __html: post.html }} />
-            <section className="testimonial">
-              <Grid
-                container
-                direction="column"
-                justify="flex-end"
-                alignItems="flex-end"
-              >
-                <Grid item xs>
-                  <h2>Check what our client said:</h2>
-                  <TestimonialCard
-                    testimonial={post.frontmatter.testimonial}
-                    author={post.frontmatter.author}
-                    style={{maxWidth: 416}}
-                  />
+            {
+              post.frontmatter.testimonial &&
+              <section className="testimonial">
+                <Grid
+                  container
+                  direction="column"
+                  justify="flex-end"
+                  alignItems="flex-end"
+                >
+                  <Grid item xs>
+                    <h2>Check what our client said:</h2>
+                    <TestimonialCard
+                      testimonial={post.frontmatter.testimonial}
+                      author={post.frontmatter.author}
+                      style={{maxWidth: 416}}
+                    />
+                  </Grid>
                 </Grid>
-              </Grid>
-            </section>
+              </section>
+            }
             <Media projectName={post.frontmatter.title} data={post.frontmatter.media || []}/>
           </Grid>
           <Grid item xs={12} md={4} lg={3} container direction="column" spacing={5}>
@@ -99,7 +102,7 @@ export default ({ data }) => {
               <TagList title="Tech" tags={post.frontmatter.tech} />
             </Grid>
             <Grid item>
-              <StatList developmentDuration="38 weeks" teamSize="3 persons" />
+              <StatList developmentDuration={`${post.frontmatter.stats.weeks} weeks`} teamSize={`${post.frontmatter.stats.persons} persons`} />
             </Grid>
             { post.frontmatter.projectLink &&
               <Grid item>
@@ -128,6 +131,7 @@ export const query = graphql`
         title
         tags
         tech
+        stats
         projectLink
         coverImage {
           childImageSharp {
