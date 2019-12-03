@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://bluepixelgroup.com/sitemap.xml
+Host: https://bluepixelgroup.com
