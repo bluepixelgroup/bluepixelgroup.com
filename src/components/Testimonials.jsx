@@ -67,6 +67,7 @@ class Testimonials extends React.Component {
           title="Testimonials"
           subtitle="What people are saying about us"
           className="testimonials"
+          id="testimonials"
         >
           <Container>
             <div className="carousel-wrapper">

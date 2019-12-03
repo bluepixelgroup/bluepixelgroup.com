@@ -77,7 +77,7 @@ export default () => {
                   <Link className="footer-link" to="/case-studies">
                     Showcases
                   </Link>,
-                  <Link className="footer-link" to="/case-studies">
+                  <Link className="footer-link" to="/case-studies/#testimonials">
                     Testimonials
                   </Link>,
                 ]}
