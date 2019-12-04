@@ -12,7 +12,7 @@ import {
   Link as MUILink,
 } from "@material-ui/core";
 
-import { handleDrift } from "../utils";
+import { handleDrift, handleCTAClick } from "../utils";
 
 import "./Menu.scss";
 import BluePixelLogo from "../assets/images/logo.inline.svg";
@@ -108,8 +108,9 @@ export default class Menu extends React.Component {
                     href={this.props.typeformURL}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={e => handleCTAClick(e, 'Menu CTA', this.props.typeformURL)}
                   >
-                    START A PROJECT
+                    Start a project
                   </Button>
                 </ListItem>
               </List>
@@ -118,7 +119,7 @@ export default class Menu extends React.Component {
         </Drawer>
       </header>
     )
-  }
+  };
 
   renderDesktopMenu = () => {
     return (
@@ -159,8 +160,9 @@ export default class Menu extends React.Component {
                   href={this.props.typeformURL}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={e => handleCTAClick(e, 'Menu CTA', this.props.typeformURL)}
                 >
-                  START A PROJECT
+                  Start a project
                 </Button>
               </Grid>
             </Grid>

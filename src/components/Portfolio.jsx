@@ -22,11 +22,20 @@ const Portfolio = ({data, seeMoreButton}) => {
       >
         <Container>
           <PortfolioGrid data={data}/>
-          {seeMoreButton? <div className="see-more-wrapper">
-            <Button component={Link} to="/case-studies/#portfolio" variant="outlined" color="primary" size="large">
-              SEE MORE PROJECTS
-            </Button>
-          </div> : "" }
+          {
+            seeMoreButton &&
+            <div className="see-more-wrapper">
+              <Button
+                component={Link}
+                to="/case-studies/#portfolio"
+                variant="outlined"
+                color="primary"
+                size="large"
+              >
+                See more projects
+              </Button>
+            </div>
+          }
         </Container>
       </Section>
     </React.Fragment>
