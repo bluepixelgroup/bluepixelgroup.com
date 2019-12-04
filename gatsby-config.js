@@ -17,6 +17,11 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
     "gatsby-theme-material-ui",
+    "gatsby-transformer-remark",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-robots-txt",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -30,9 +35,6 @@ module.exports = {
         path: `${__dirname}/src/assets/images/case-studies`,
       },
     },
-    "gatsby-transformer-remark",
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
@@ -41,7 +43,14 @@ module.exports = {
         }
       }
     },
-    "gatsby-plugin-sitemap",
-    "gatsby-plugin-robots-txt",
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-60048784-3",
+        head: false,
+        anonymize: true,
+        respectDNT: true,
+      },
+    },
   ],
 };

@@ -59,7 +59,7 @@ const Technology = () => (
                 <BackTechItem
                   icon={ApiIcon}
                   title="Custom APIs"
-                  details="Complicated as it may sound, creating a custom API service is actually quite easy. The go-to when everything else is not working for you."
+                  details="Complicated as it may sound, creating a custom API service is actually quite easy. The go-to when everything else is not working for you. (Python, Django, Flask or Node.js)"
                 />
               </div>
             </Grid>

@@ -4,6 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 
 import Separator from "./common/Separator";
+import { handleCTAClick } from "../utils";
 
 import './OneStop.scss';
 import * as ModularIcon from '../assets/images/icons/modular.svg';
@@ -41,6 +42,7 @@ const OneStop = ({ typeformURL }) => (
               href={typeformURL}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={e => handleCTAClick(e, 'OneStop CTA', typeformURL)}
             >
               Get free quota
             </Button>

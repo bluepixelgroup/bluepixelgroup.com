@@ -1,9 +1,9 @@
 import React from "react";
-import Link from '@material-ui/core/Link';
+import Link from "@material-ui/core/Link";
 import { Container, Grid, Button } from "@material-ui/core";
 
 import "./CTA.scss";
-import { handleDrift } from "../../utils";
+import { handleDrift, handleCTAClick } from "../../utils";
 
 
 export default ({ typeformURL }) => {
@@ -27,6 +27,7 @@ export default ({ typeformURL }) => {
                   href={typeformURL}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={e => handleCTAClick(e, 'CTA', typeformURL)}
                 >
                   Start a project
                 </Button>

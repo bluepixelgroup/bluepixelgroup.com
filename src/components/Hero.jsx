@@ -1,18 +1,19 @@
 import React from 'react';
-
 import Typewriter from "typewriter-effect";
 import Container from "@material-ui/core/Container";
 import {Button} from "@material-ui/core"
 import Grid from "@material-ui/core/Grid";
 
+import { handleCTAClick } from "../utils";
+
+import "./Hero.scss";
 import GoogleSVG from "../assets/images/landing-hero/google.inline.svg";
-import DigitalOceanSVG
-  from "../assets/images/landing-hero/digital-ocean.inline.svg";
+import DigitalOceanSVG from "../assets/images/landing-hero/digital-ocean.inline.svg";
 import AmazonSVG from "../assets/images/landing-hero/aws.inline.svg";
 import AzureSVG from "../assets/images/landing-hero/azure.inline.svg";
-import "./Hero.scss";
 
-export default ({typeformURL}) => {
+
+export default ({ typeformURL }) => {
   return (
     <div className="hero">
       <Container>
@@ -42,6 +43,7 @@ export default ({typeformURL}) => {
             href={typeformURL}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={e => handleCTAClick(e, 'Hero CTA', typeformURL)}
           >
             Start a project
           </Button>
