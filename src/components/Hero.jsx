@@ -58,16 +58,16 @@ export default ({ typeformURL }) => {
                 className="cloud-providers"
           >
             <Grid container item xs={6} sm={3} spacing={3}>
-              <img src={AmazonSVG} className="cloud-icon"/>
+              <img alt="Amazon" src={AmazonSVG} className="cloud-icon"/>
             </Grid>
             <Grid container item xs={6} sm={3} spacing={3}>
-              <img src={DigitalOceanSVG} className="cloud-icon"/>
+              <img alt="Digital Ocean" src={DigitalOceanSVG} className="cloud-icon"/>
             </Grid>
             <Grid container item xs={6} sm={3} spacing={3}>
-              <img src={GoogleSVG} className="cloud-icon"/>
+              <img alt="Google" src={GoogleSVG} className="cloud-icon"/>
             </Grid>
             <Grid container item xs={6} sm={3} spacing={3}>
-              <img src={AzureSVG} className="cloud-icon"/>
+              <img alt="Azure" src={AzureSVG} className="cloud-icon"/>
             </Grid>
           </Grid>
         </div>
