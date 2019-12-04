@@ -15,7 +15,7 @@ export default ({ data }) => {
     <Layout>
       <SEO
         title="We have stories to inspire you | Blue Pixel"
-        pathname="/case-studies"
+        pathname="/case-studies/"
         description="Over the years, businesses have trusted us for the agility, neatness and the robustness we promise and deliver."
       />
       <GenericHero
