@@ -7,7 +7,6 @@ author:
   name: "James Quinn"
   role: "Co-founder"
   company: "Yournet"
-  image: ../assets/images/case-studies/yournet-author.png
 
 projectName: "Yournet"
 featuredImage: ../assets/images/case-studies/yournet-icon.png
