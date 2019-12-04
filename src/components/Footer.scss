@@ -22,11 +22,13 @@
   .value-proposition {
     @extend .grey-text;
     @extend .small-text;
+
     margin: 0;
   }
 
   .footer-link, .footer-link:hover, .footer-link:active {
     @extend .grey-text;
+    text-decoration: none !important;
   }
 
   .info-links-container {
