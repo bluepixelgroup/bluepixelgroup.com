@@ -7,10 +7,10 @@ import Grid from "@material-ui/core/Grid";
 import { handleCTAClick } from "../utils";
 
 import "./Hero.scss";
-import GoogleSVG from "../assets/images/landing-hero/google.inline.svg";
-import DigitalOceanSVG from "../assets/images/landing-hero/digital-ocean.inline.svg";
-import AmazonSVG from "../assets/images/landing-hero/aws.inline.svg";
-import AzureSVG from "../assets/images/landing-hero/azure.inline.svg";
+import * as GoogleSVG from "../assets/images/landing-hero/google.svg";
+import * as DigitalOceanSVG from "../assets/images/landing-hero/digital-ocean.svg";
+import * as AmazonSVG from "../assets/images/landing-hero/aws.svg";
+import * as AzureSVG from "../assets/images/landing-hero/azure.svg";
 
 
 export default ({ typeformURL }) => {
@@ -58,16 +58,16 @@ export default ({ typeformURL }) => {
                 className="cloud-providers"
           >
             <Grid container item xs={6} sm={3} spacing={3}>
-              <AmazonSVG className="cloud-icon"/>
+              <img src={AmazonSVG} className="cloud-icon"/>
             </Grid>
             <Grid container item xs={6} sm={3} spacing={3}>
-              <DigitalOceanSVG className="cloud-icon"/>
+              <img src={DigitalOceanSVG} className="cloud-icon"/>
             </Grid>
             <Grid container item xs={6} sm={3} spacing={3}>
-              <GoogleSVG className="cloud-icon"/>
+              <img src={GoogleSVG} className="cloud-icon"/>
             </Grid>
             <Grid container item xs={6} sm={3} spacing={3}>
-              <AzureSVG className="cloud-icon"/>
+              <img src={AzureSVG} className="cloud-icon"/>
             </Grid>
           </Grid>
         </div>
