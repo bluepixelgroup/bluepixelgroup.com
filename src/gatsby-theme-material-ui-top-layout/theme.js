@@ -17,6 +17,17 @@ const theme = createMuiTheme({
     },
   },
   overrides: {
+    MuiCssBaseline: {
+      '@global': {
+        body: {
+          backgroundColor: '#fff',
+          color: '#767373',
+          fontStyle: 'normal',
+          fontWeight: 'normal',
+          fontSize: '1.125rem',
+        },
+      },
+    },
     MuiPaper: {
       root: {
         backgroundColor: '#FAFBFC',
