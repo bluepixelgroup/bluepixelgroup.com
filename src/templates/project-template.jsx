@@ -72,6 +72,7 @@ export default ({ data }) => {
         <h1 className="case-study-title">{post.frontmatter.title}</h1>
         <Img
           className="case-study-cover-image"
+          objectFit="contain"
           fluid={post.frontmatter.coverImage.childImageSharp.fluid}
           alt={post.frontmatter.title}
         />
