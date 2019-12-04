@@ -175,10 +175,10 @@ export default class Menu extends React.Component {
   render() {
     return (
       <Container>
-        <Hidden only={['xs', 'sm']}>
+        <Hidden implementation="css" only={['xs', 'sm']}>
           { this.renderDesktopMenu() }
         </Hidden>
-        <Hidden only={['md', 'lg', 'xl']}>
+        <Hidden implementation="css" only={['md', 'lg', 'xl']}>
           { this.renderMobileMenu() }
         </Hidden>
       </Container>
