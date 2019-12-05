@@ -126,7 +126,7 @@ export default () => {
             </IconButton>
             <IconButton
               size="small"
-              href="https://facebook.com"
+              href="https://www.facebook.com/bluepixelgroup/"
               target="_blank"
               rel="noopener noreferrer"
             >
