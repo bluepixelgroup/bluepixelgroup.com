@@ -118,7 +118,7 @@ export default () => {
             </IconButton>
             <IconButton
               size="small"
-              href="https://twitter.com"
+              href="https://twitter.com/bluepixelgroup/"
               target="_blank"
               rel="noopener noreferrer"
             >
