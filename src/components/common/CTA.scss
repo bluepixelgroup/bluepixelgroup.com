@@ -13,4 +13,16 @@
       text-decoration: underline;
     }
   }
+
+  .interested {
+    @media (max-width: 959px) {
+      justify-content: center !important;
+    }
+  }
+
+  .start-project {
+    @media (max-width: 959px) {
+      align-items: center !important;
+    }
+  }
 }
