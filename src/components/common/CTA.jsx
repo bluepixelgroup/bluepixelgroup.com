@@ -10,7 +10,7 @@ export default ({ typeformURL }) => {
   return (
     <div className="cta">
       <Container>
-        <Grid container justify="space-between">
+        <Grid container justify="space-between" className="interested">
           <Grid item xs={12} md={8}>
             <h4>Interested? Have any projects?</h4>
             <p className="text-black">
@@ -19,7 +19,7 @@ export default ({ typeformURL }) => {
             </p>
           </Grid>
           <Grid item>
-            <Grid container direction="column" alignItems="flex-end">
+            <Grid container direction="column" alignItems="flex-end" className="start-project">
               <Grid item>
                 <Button
                   variant="contained"
