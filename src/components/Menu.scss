@@ -22,15 +22,15 @@
 .mobile-menu {
   padding: 34px 20px;
 
+  a, button {
+    margin: 0 auto;
+  }
+
+  a {
+    padding: 10px;
+  }
+
   .mobile-menu-item {
     @extend .menu-item;
-
-    a, button {
-      margin: 0 auto;
-    }
-
-    a {
-      padding: 10px;
-    }
   }
 }
