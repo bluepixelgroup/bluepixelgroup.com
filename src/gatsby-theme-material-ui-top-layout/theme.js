@@ -68,6 +68,11 @@ const theme = createMuiTheme({
         height: 40,
         fontWeight: 'bold',
       },
+      containedSizeSmall: {
+        height: 40,
+        fontWeight: 'bold',
+        width: 200,
+      },
       outlinedSizeLarge: {
         minHeight: 60,
         minWidth: 230,
