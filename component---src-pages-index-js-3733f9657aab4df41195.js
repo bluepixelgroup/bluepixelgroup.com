@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{RXBc:function(e,n,t){"use strict";t.r(n);var l=t("q1tI"),a=t.n(l),r=function(e){var n=e.children;return a.a.createElement(a.a.Fragment,null,a.a.createElement("div",null,"This is from layout component"),a.a.createElement("div",null,n))};n.default=function(){return a.a.createElement(r,null,a.a.createElement("h1",null,"Hello world!"))}}}]);
-//# sourceMappingURL=component---src-pages-index-js-3733f9657aab4df41195.js.map
