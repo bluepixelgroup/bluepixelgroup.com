@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 
 import { Container, Button, Grid } from "@material-ui/core";
-import * as Taken from "../assets/images/taken.svg";
+import Taken from "../assets/images/taken.inline.svg";
 
 import "./NotFound.scss";
 
@@ -32,7 +32,7 @@ export default () => {
           </Button>
         </Grid>
         <Grid item xs={12} sm={6} md={"auto"}>
-          <img src={Taken} alt="Not found page" />
+          <Taken/>
         </Grid>
       </Grid>
     </Container>
