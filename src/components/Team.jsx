@@ -13,7 +13,7 @@ const Team = () => (
     <Separator />
     <Section
       title="Our Team"
-      subtitle="Our team is your team. We know you need the best people to build your vision, so we got your back! Get to know your team below."
+      subtitle="Our team is your team. We know you need the best people to build your vision, so we've got your back! Get to know your team below."
       className="team"
       id="team"
     >
