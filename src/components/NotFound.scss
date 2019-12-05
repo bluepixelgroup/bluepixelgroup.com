@@ -1,0 +1,19 @@
+.not-found-container {
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    .message-container {
+        max-width: 414px;
+    }
+
+    .spaced-evenly {
+        margin: 10px 0px;
+    }
+
+    img {
+        max-width: 334px;
+        width: 100%;
+        margin: auto;
+        display: block;
+    }
+}
