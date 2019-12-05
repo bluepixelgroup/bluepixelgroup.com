@@ -9,12 +9,11 @@ import "./NotFound.scss";
 
 export default () => {
   return (
-    <Container>
+    <Container className="not-found-container">
       <Grid
         container
         justify="center"
         alignItems="center"
-        className="not-found-container"
         spacing={8}
       >
         <Grid item className="message-container" xs={12} sm={6} md={"auto"}>
