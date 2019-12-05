@@ -48,7 +48,7 @@ const Technology = () => (
                   Introducing the API to go beyond
                 </h5>
                 <p>
-                  Building the API for your services, like other programming skills is part art, part science.
+                  Building the API for your services, like other programming skills, is part art, part science.
                 </p>
 
                 <BackTechItem

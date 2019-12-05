@@ -14,8 +14,7 @@ export default ({ typeformURL }) => {
           <Grid item xs={12} md={8}>
             <h4>Interested? Have any projects?</h4>
             <p className="text-black">
-              Get everything you need to build your amazing product. We have the best tech talent to make your vision
-              feasible!
+              Get everything you need to build your amazing product. We have the best tech talent to turn your vision into reality!
             </p>
           </Grid>
           <Grid item>
