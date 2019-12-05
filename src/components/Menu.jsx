@@ -100,7 +100,7 @@ export default class Menu extends React.Component {
                 <ListItem className="mobile-menu-item">
                   <MUILink href="#" onClick={handleDrift}>CONTACT US</MUILink>
                 </ListItem>
-                <ListItem className="mobile-menu-item">
+                <ListItem>
                   <Button
                     variant="outlined"
                     color="primary"
