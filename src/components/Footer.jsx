@@ -134,7 +134,7 @@ export default () => {
             </IconButton>
             <IconButton
               size="small"
-              href="https://github.com/bluepixelio"
+              href="https://github.com/bluepixelgroup"
               target="_blank"
               rel="noopener noreferrer"
             >
