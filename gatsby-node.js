@@ -7,7 +7,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     createNodeField({
       node,
       name: `slug`,
-      value: `/case-studies/${encodeURIComponent(slug)}`,
+      value: `/case-studies/${encodeURIComponent(slug)}/`,
     })
   }
 };
