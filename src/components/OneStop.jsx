@@ -44,7 +44,7 @@ const OneStop = ({ typeformURL }) => (
               rel="noopener noreferrer"
               onClick={e => handleCTAClick(e, 'OneStop CTA', typeformURL)}
             >
-              Get free quota
+              Get free quote
             </Button>
             <small>* We usually respond within 48h</small>
           </Grid>
