@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://bluepixelgroup.com">
-    <img alt="Blue Pixel" src="https://bluepixelgroup.com/img/logo.svg" width="60" />
+    <img alt="Blue Pixel" src="https://bluepixelgroup.com/default_meta_image.jpg" width="60" />
   </a>
 </p>
 <h1 align="center">
