@@ -65,7 +65,7 @@ export default () => {
                     Prototyping
                   </Link>,
                   <Link className="footer-link" to="/">
-                    Maintainance
+                    Maintenance
                   </Link>,
                 ]}
               />
