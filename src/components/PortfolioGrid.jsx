@@ -11,7 +11,7 @@ const PortfolioGrid = ({data}) => {
     <div className="wrapper">
       <Grid container
             direction="row"
-            justify="space-between"
+            justify="space-around"
             alignItems="center"
             className="portfolio">
         {data.allMarkdownRemark.edges.map(({node}, index) => (
